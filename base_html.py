@@ -91,9 +91,13 @@ roman2dev = {
 
 # content for index.html 
 index_content = """
+<center>
         ॥ श्रीसिद्धिबुद्धिसहितश्रीमद्गणाधिपतये नमः ॥
 <br>
-Tarka Sangraha - Sharing the text as I learn it
+Tarka Sangraha - Sharing the text as I learn it.
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Ganesha_on_Gopuram_in_the_Meenakshi_Temple_at_Madurai.jpg" width="580" height="380"/>
+</center>
 """
 
 index_html = base_html.format(content=index_content)
