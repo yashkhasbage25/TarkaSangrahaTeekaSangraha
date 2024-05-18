@@ -82,7 +82,7 @@ base_html = """
 </html>
 
 """
-repo_name = ""
+repo_name = "TarkaSangrahaTeekaSangraha"
 
 from bs4 import BeautifulSoup
 roman2dev = {
