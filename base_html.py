@@ -20,7 +20,7 @@ base_html = """
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #90EE90;">
-        <a class="navbar-brand" href="index.html">तर्कसङ्ग्रहटीकासङ्ग्रहः</a>
+        <a class="navbar-brand" href="/{repo_name}/index.html">तर्कसङ्ग्रहटीकासङ्ग्रहः</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@ base_html = """
                     <a class="nav-link dropdown-toggle" href="#" id="pratyaksha-nav-dropdown" role="button" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">प्रत्यक्षपरिच्छेदः</a>
                     <div class="dropdown-menu" aria-labelledby="pratyaksha-nav-dropdown">
-                        <a class="dropdown-item" href="pratyaksha.html">मुखम्</a>
+                        <a class="dropdown-item" href="/{repo_name}/pratyaksha.html">मुखम्</a>
                         <a class="dropdown-item" href="#">मङ्गलम्</a>
                         <a class="dropdown-item" href="#">मङ्गलवादः</a>
                         <a class="dropdown-item" href="#">सप्तपदार्थाः</a>
@@ -82,6 +82,8 @@ base_html = """
 </html>
 
 """
+repo_name = "TarkaSangrahaTeekaSangraha"
+
 from bs4 import BeautifulSoup
 roman2dev = {
     "moolam": "मूलम्",
@@ -148,6 +150,6 @@ def pariccheda_to_html(root):
                 html += '</div>'
     
     html += '</div>'
-    html = base_html.format(content=html)
+    html = base_html.format(content=html, repo_name=repo_name)
     html = format_html(html)
     return html
