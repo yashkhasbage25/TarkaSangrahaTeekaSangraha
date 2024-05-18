@@ -1,4 +1,4 @@
-
+base_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,11 +73,7 @@
     
     <!-- Main content -->
     <div class="main-content bg-dark">
-        
-        ॥ श्रीसिद्धिबुद्धिसहितश्रीमद्गणाधिपतये नमः ॥
-<br>
-Tarka Sangraha - Sharing the text as I learn it
-
+        {content}
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -85,3 +81,69 @@ Tarka Sangraha - Sharing the text as I learn it
 </body>
 </html>
 
+"""
+from bs4 import BeautifulSoup
+roman2dev = {
+    "moolam": "मूलम्",
+    "padakrtyam": "पदकृत्यम्",
+    "deepika": "दीपिका"
+}
+
+# content for index.html 
+index_content = """
+        ॥ श्रीसिद्धिबुद्धिसहितश्रीमद्गणाधिपतये नमः ॥
+<br>
+Tarka Sangraha - Sharing the text as I learn it
+"""
+
+index_html = base_html.format(content=index_content)
+
+
+
+def format_html(html_string):
+    soup = BeautifulSoup(html_string, 'html.parser')
+    formatted_html = soup.prettify()
+    return formatted_html
+
+def format_shloka(shloka):
+    """
+    Formats a shloka to be displayed on a webpage
+    """
+    lines = shloka.split('\n')
+    formatted = '<div class="shloka">'
+    for line in lines:
+        formatted += f'<p>{line}</p>'
+    formatted += '</div>'
+    return formatted
+
+def pariccheda_to_html(root):
+    """
+    HTML converter for pariccheda XML files
+    """
+    html = '<div class="container bg-dark">'
+    
+    for child in root:
+        if child.tag == 'head':
+            html += f'<h1 class="text-center">{child.text}</h1>'
+        elif child.tag == 'body':
+            for subchild in child:
+                html += f'<div class="section bg-dark">'
+                if subchild.tag == 'moolam' or subchild.tag == 'padakrtyam' or subchild.tag == 'deepika':
+                    html += f'<h4>{roman2dev[subchild.tag]}</h4>'
+                    for subsubchild in subchild:
+                        if subsubchild.tag == 'text':
+                            html += f'<p>{subsubchild.text}</p>'
+                        elif subsubchild.tag == 'verse':
+                            html += format_shloka(subsubchild.text)
+                        else:
+                            html += f'<h4>{subsubchild.tag}</h4>'
+                            html += f'<p>{subsubchild.text}</p>'
+                else:
+                    html += f'<h2>{subchild.tag}</h2>'
+                    html += f'<p>{subchild.text}</p>'
+                html += '</div>'
+    
+    html += '</div>'
+    html = base_html.format(content=html)
+    html = format_html(html)
+    return html
