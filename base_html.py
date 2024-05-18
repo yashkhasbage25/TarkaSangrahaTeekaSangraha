@@ -82,13 +82,15 @@ base_html = """
 </html>
 
 """
-repo_name = "TarkaSangrahaTeekaSangraha"
+repo_name = "docs" # FIXME
 
 from bs4 import BeautifulSoup
+import re
 roman2dev = {
     "moolam": "मूलम्",
     "padakrtyam": "पदकृत्यम्",
-    "deepika": "दीपिका"
+    "deepika": "दीपिका",
+    "nyayabodhini": "न्यायबोधिनी"
 }
 
 # content for index.html 
@@ -118,6 +120,10 @@ def format_shloka(shloka):
     lines = shloka.split('\n')
     formatted = '<div class="shloka">'
     for line in lines:
+        space_danda = r'(?<!\s)।(?!\s)'
+        space_double_danda = r'(?<!\s)॥(?!\s)'
+        line = re.sub(space_danda, ' ।', line)
+        line = re.sub(space_double_danda, ' ॥', line)
         formatted += f'<p>{line}</p>'
     formatted += '</div>'
     return formatted
@@ -134,7 +140,7 @@ def pariccheda_to_html(root):
         elif child.tag == 'body':
             for subchild in child:
                 html += f'<div class="section bg-dark">'
-                if subchild.tag == 'moolam' or subchild.tag == 'padakrtyam' or subchild.tag == 'deepika':
+                if subchild.tag in ['moolam', 'padakrtyam', 'deepika', 'nyayabodhini']:
                     html += f'<h4>{roman2dev[subchild.tag]}</h4>'
                     for subsubchild in subchild:
                         if subsubchild.tag == 'text':
