@@ -98,7 +98,7 @@ index_content = """
 <br>
 Tarka Sangraha - Sharing the text as I learn it.
 <br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Ganesha_on_Gopuram_in_the_Meenakshi_Temple_at_Madurai.jpg" width="580" height="380"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Ganesha_on_Gopuram_in_the_Meenakshi_Temple_at_Madurai.jpg" />
 </center>
 """
 
