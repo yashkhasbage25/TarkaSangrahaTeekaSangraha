@@ -102,7 +102,7 @@ Tarka Sangraha - Sharing the text as I learn it.
 </center>
 """
 
-index_html = base_html.format(content=index_content)
+index_html = base_html.format(content=index_content, repo_name=repo_name)
 
 
 
