@@ -10,9 +10,9 @@ window.onload = function() {
     var img = document.getElementById("image");
     
     // Check if the image width exceeds the container width
-    if (img.clientWidth > window.innerWidth) {
+    if (window.innerWidth < 700) {
       // Resize the image to fit the container width
-      img.style.width = "100%";
+      img.style.width = "300px";
       img.style.height = "auto";
     }
   };
