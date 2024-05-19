@@ -82,7 +82,8 @@ base_html = """
 </html>
 
 """
-repo_name = "docs" # FIXME
+# TarkaSangrahaTeekaSangraha
+repo_name = "TarkaSangrahaTeekaSangraha" # FIXME
 
 from bs4 import BeautifulSoup
 import re
