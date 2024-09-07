@@ -15,11 +15,13 @@ base_html = """
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <script rel="text/javascript" src="js/main.js"></script>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Halant:wght@300;400;500;600;700&family=Laila:wght@300;400;500;600;700&family=Martel:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap');
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: darkgreen;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="/{repo_name}/index.html">तर्कसङ्ग्रहटीकासङ्ग्रहः</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +33,8 @@ base_html = """
                     <a class="nav-link dropdown-toggle" href="#" id="pratyaksha-nav-dropdown" role="button" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">प्रत्यक्षपरिच्छेदः</a>
                     <div class="dropdown-menu" aria-labelledby="pratyaksha-nav-dropdown">
-                        <a class="dropdown-item" href="/{repo_name}/pratyaksha.html">मुखम्</a>
-                        <a class="dropdown-item" href="#">मङ्गलम्</a>
-                        <a class="dropdown-item" href="#">मङ्गलवादः</a>
+                        <a class="dropdown-item" href="#section-मङ्गलम्">मङ्गलम्</a>
+                        <a class="dropdown-item" href="#section-मङ्गलवादः">मङ्गलवादः</a>
                         <a class="dropdown-item" href="#">सप्तपदार्थाः</a>
                     </div>
                 </li>
@@ -72,7 +73,7 @@ base_html = """
     </nav>
     
     <!-- Main content -->
-    <div class="main-content bg-dark">
+    <div class="main-content  mt-5 pt-3">
         {content}
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -83,7 +84,7 @@ base_html = """
 
 """
 # TarkaSangrahaTeekaSangraha
-repo_name = "TarkaSangrahaTeekaSangraha" # FIXME
+repo_name = "https://yashkhasbage25.github.io/TarkaSangrahaTeekaSangraha" # FIXME
 
 from bs4 import BeautifulSoup
 import re
@@ -97,11 +98,17 @@ roman2dev = {
 # content for index.html 
 index_content = """
 <center>
+<div class="yatra-one-regular fancy-heading">
         ॥ श्रीसिद्धिबुद्धिसहितश्रीमद्गणाधिपतये नमः ॥
-<br>
-Tarka Sangraha - Sharing the text as I learn it.
-<br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Ganesha_on_Gopuram_in_the_Meenakshi_Temple_at_Madurai.jpg" />
+    <br>
+        Tarka Sangraha <br>
+        Sharing the text as I learn it.
+    <br>
+</div>
+<img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/60/Ganesha_on_Gopuram_in_the_Meenakshi_Temple_at_Madurai.jpg" 
+    class="fancy-image-border"
+    />
 </center>
 """
 
@@ -119,7 +126,7 @@ def format_shloka(shloka):
     Formats a shloka to be displayed on a webpage
     """
     lines = shloka.split('\n')
-    formatted = '<div class="shloka">'
+    formatted = '<div class="shloka laila-regular">'
     for line in lines:
         space_danda = r'(?<!\s)।(?!\s)'
         space_double_danda = r'(?<!\s)॥(?!\s)'
@@ -133,19 +140,23 @@ def pariccheda_to_html(root):
     """
     HTML converter for pariccheda XML files
     """
-    html = '<div class="container bg-dark">'
-    
+    html = '<div class="container">'
+    section_tags = []
     for child in root:
         if child.tag == 'head':
-            html += f'<h1 class="text-center">{child.text}</h1>'
+            html += f'<h1 class="text-center halant-bold">{child.text}</h1>'
         elif child.tag == 'body':
             for subchild in child:
-                html += f'<div class="section bg-dark">'
+                html += f'<div class="section" id={"section-" + subchild.get('section', '')}">'
+                if subchild.get('section', '') != '':
+                    section_tags.append(subchild.get('section'))
                 if subchild.tag in ['moolam', 'padakrtyam', 'deepika', 'nyayabodhini']:
-                    html += f'<h4>{roman2dev[subchild.tag]}</h4>'
+                    html += f'<h4 class="martel-bold book-name">{roman2dev[subchild.tag]}</h4>'
+                    if subchild.get('section', '') != '':
+                        html += f"<div id='section-{subchild.get('section')}'></div>"
                     for subsubchild in subchild:
                         if subsubchild.tag == 'text':
-                            html += f'<p>{subsubchild.text}</p>'
+                            html += f'<p class="noto-sans-light commentary">{subsubchild.text}</p>'
                         elif subsubchild.tag == 'verse':
                             html += format_shloka(subsubchild.text)
                         else:
