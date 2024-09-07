@@ -84,7 +84,7 @@ base_html = """
 
 """
 # TarkaSangrahaTeekaSangraha
-repo_name = "https://yashkhasbage25.github.io/TarkaSangrahaTeekaSangraha" # FIXME
+repo_name = "TarkaSangrahaTeekaSangraha" # FIXME
 
 from bs4 import BeautifulSoup
 import re
