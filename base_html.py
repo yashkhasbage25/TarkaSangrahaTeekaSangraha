@@ -33,7 +33,7 @@ base_html = """
                     <a class="nav-link dropdown-toggle" href="#" id="pratyaksha-nav-dropdown" role="button" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">प्रत्यक्षपरिच्छेदः</a>
                     <div class="dropdown-menu" aria-labelledby="pratyaksha-nav-dropdown">
-                        <a class="dropdown-item" href="#section-मङ्गलम्">मङ्गलम्</a>
+                        <a class="dropdown-item" href="/{repo_name}/pratyaksha.html#section-मङ्गलम्">मङ्गलम्</a>
                         <a class="dropdown-item" href="#section-मङ्गलवादः">मङ्गलवादः</a>
                         <a class="dropdown-item" href="#">सप्तपदार्थाः</a>
                     </div>
@@ -84,6 +84,7 @@ base_html = """
 
 """
 # TarkaSangrahaTeekaSangraha
+# docs
 repo_name = "TarkaSangrahaTeekaSangraha" # FIXME
 
 from bs4 import BeautifulSoup
