@@ -35,7 +35,9 @@ base_html = """
                     <div class="dropdown-menu" aria-labelledby="pratyaksha-nav-dropdown">
                         <a class="dropdown-item" href="/{repo_name}/pratyaksha.html#section-मङ्गलम्">मङ्गलम्</a>
                         <a class="dropdown-item" href="#section-मङ्गलवादः">मङ्गलवादः</a>
-                        <a class="dropdown-item" href="#">सप्तपदार्थाः</a>
+                        <a class="dropdown-item" href="#section-सप्तपदार्थाः">सप्तपदार्थाः</a>
+                        <a class="dropdown-item" href="#section-द्रव्याणि">प्रत्यक्षविभागः</a>
+                        <a class="dropdown-item" href="#section-गुणाः">गुणाः</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -68,6 +70,24 @@ base_html = """
                         <a class="dropdown-item" href="#">Option 3</a>
                     </div>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="teeka-nav-dropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">टीकाचयनम्</a>
+                    <div class="dropdown-menu" aria-labelledby="pratyaksha-nav-dropdown">
+                        <div class="dropdown-item">
+                            <input class="form-check-input" type="checkbox" value="" id="padakrtyam-checkbox" checked>
+                            <label class="form-check-label">पदकृत्यम्</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input class="form-check-input" type="checkbox" value="" id="nyayabodhini-checkbox" checked>
+                            <label class="form-check-label">न्यायबोधिनी</label>
+                        </div>
+                        <div class="dropdown-item">
+                            <input class="form-check-input" type="checkbox" value="" id="deepika-checkbox" checked>
+                            <label class="form-check-label">दीपिका</label>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -79,6 +99,38 @@ base_html = """
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>  
+        document.getElementById('deepika-checkbox').addEventListener('change', function() {{  
+            var elements = document.querySelectorAll('.teeka-deepika');  
+            elements.forEach(function(element) {{  
+                if (this.checked) {{ 
+                element.classList.remove('hidden');  
+                }} else {{  
+                element.classList.add('hidden');  
+                }}  
+            }}, this);  
+        }});  
+        document.getElementById('nyayabodhini-checkbox').addEventListener('change', function() {{  
+            var elements = document.querySelectorAll('.teeka-nyayabodhini');  
+            elements.forEach(function(element) {{  
+                if (this.checked) {{  
+                element.classList.remove('hidden');  
+                }} else {{  
+                element.classList.add('hidden');  
+                }}  
+            }}, this);  
+        }});  
+        document.getElementById('padakrtyam-checkbox').addEventListener('change', function() {{  
+            var elements = document.querySelectorAll('.teeka-padakrtyam');  
+            elements.forEach(function(element) {{  
+                if (this.checked) {{  
+                element.classList.remove('hidden');  
+                }} else {{  
+                element.classList.add('hidden');  
+                }}  
+            }}, this);  
+        }});  
+    </script>  
 </body>
 </html>
 
@@ -148,7 +200,9 @@ def pariccheda_to_html(root):
             html += f'<h1 class="text-center halant-bold">{child.text}</h1>'
         elif child.tag == 'body':
             for subchild in child:
-                html += f'<div class="section" id={"section-" + subchild.get('section', '')}">'
+                className = "section teeka-" + subchild.tag
+                idName = "section-" + subchild.get('section', '')
+                html += f'<div class="{className}" id="{idName}">'
                 if subchild.get('section', '') != '':
                     section_tags.append(subchild.get('section'))
                 if subchild.tag in ['moolam', 'padakrtyam', 'deepika', 'nyayabodhini']:
