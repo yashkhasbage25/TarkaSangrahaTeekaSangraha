@@ -37,10 +37,10 @@ export default function Home() {
                 most important texts for the students of Tarka. Everyone suggests to read TarkaSangraha as a beginner. Even the टीका-s based on it 
                 are recommended for the advanced students. 
                 <br/>
-                So, this book is heavily read but not avaiable freely with all its टीका-s? Doesn't seem good. This website this the solution!!
+                So, this book is heavily read but not available freely with all its टीका-s? Doesn't seem good. This website is the solution!!
                 <br/>
 
-                I am just a learner of न्याय-वैशेषिक-तर्क subjects. My knowledge stands nowhere in front of the huge ancient literature have.<br/>
+                I am just a learner of न्याय-वैशेषिक-तर्क subjects. My knowledge stands nowhere in front of the huge ancient literature we have.<br/>
                 I would request the interested Āchāryas to contribute their knowledge and feedback to this effort.<br/>
                 <b>
                     Contact
