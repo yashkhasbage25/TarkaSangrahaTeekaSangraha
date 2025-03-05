@@ -4,9 +4,16 @@ import Navbar from '../components/Navbar';
 export default function Home() {  
     return (  
         <div>  
-            <Head>  
-                
-            </Head>
+        <Head>  
+            <title>तर्कसङ्ग्रहटीकासङ्ग्रहः</title>  
+            <meta name="description" content="The book Tarka Sangraha and its Teekas Nyayabodhini, Padakrtyam, Deepika" />  
+            <meta name="keywords" content="TarkaSangraha, Nyaya, Vaisheshika, Tarka, Nyayabodhini, Padakrtyam, Deepika" />  
+            <meta name="author" content="Yash Khasbage" />  
+            <meta property="og:title" content="Yash Khasbage" />  
+            <meta property="og:description" content="Student of Tarka Shastra" />  
+            <meta property="og:url" content="https://www.yashkhasbage25.github.io" />  
+            <meta name="twitter:title" content="yashkhasbage25" />  
+        </Head>  
             <Navbar />  
             <div className="container mt-5 pt-5">  
                 <center>  
