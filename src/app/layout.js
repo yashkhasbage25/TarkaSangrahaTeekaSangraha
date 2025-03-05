@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
                 <style>  
                     {`@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Halant:wght@300;400;500;600;700&family=Laila:wght@300;400;500;600;700&family=Martel:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap');`}  
                 </style>  
+                <link rel="icon" href="./favicon.png" />  
             </head>  
             <body style={{ backgroundColor: '#272727', color: '#ffffff'}}>  
                 <Navbar />   

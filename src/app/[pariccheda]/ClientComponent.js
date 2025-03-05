@@ -32,7 +32,9 @@ export default function ClientComponent({ content }) {
               behavior: 'smooth',  
             });  
             setTimeout(() => {  
-              window.scrollBy(0, -100); // Adjust this value based on your navbar height  
+              const navbar = document.querySelector('.navbar');  
+              const navbarHeight = navbar ? navbar.offsetHeight : 0;  
+              window.scrollBy(0, -(navbarHeight)); // Adjust based on the navbar height  
             }, 500);  
           } else {  
             console.warn(`Element with id ${targetId} not found.`);  
@@ -43,25 +45,17 @@ export default function ClientComponent({ content }) {
   }, []);  
   
   useEffect(() => {  
-    const elements = document.querySelectorAll('.teeka-nyayabodhini');  
-    elements.forEach(element => {  
-      element.style.display = nyayabodhiniVisible ? 'block' : 'none';  
-    });  
-  }, [nyayabodhiniVisible]);  
+    const handleVisibility = (selector, isVisible) => {  
+      const elements = document.querySelectorAll(selector);  
+      elements.forEach(element => {  
+        element.style.display = isVisible ? 'block' : 'none';  
+      });  
+    };  
   
-  useEffect(() => {  
-    const elements = document.querySelectorAll('.teeka-deepika');  
-    elements.forEach(element => {  
-      element.style.display = deepikaVisible ? 'block' : 'none';  
-    });  
-  }, [deepikaVisible]);  
-  
-  useEffect(() => {  
-    const elements = document.querySelectorAll('.teeka-padakrtyam');  
-    elements.forEach(element => {  
-      element.style.display = padakrytamVisible ? 'block' : 'none';  
-    });  
-  }, [padakrytamVisible]);  
+    handleVisibility('.teeka-nyayabodhini', nyayabodhiniVisible);  
+    handleVisibility('.teeka-deepika', deepikaVisible);  
+    handleVisibility('.teeka-padakrtyam', padakrytamVisible);  
+  }, [nyayabodhiniVisible, deepikaVisible, padakrytamVisible]);  
   
   return (  
     <>  

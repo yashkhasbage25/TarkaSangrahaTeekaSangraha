@@ -19,7 +19,7 @@ async function getHtmlContent(pariccheda) {
   
 // Dynamic route component  
 export default async function Pariccheda({ params }) {  
-  const { pariccheda } = params;  
+  const { pariccheda } = await params;  
   const content = await getHtmlContent(pariccheda);  
   
   return <ClientComponent content={content} />;  

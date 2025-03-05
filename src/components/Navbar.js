@@ -1,5 +1,5 @@
 "use client";  
-
+  
 import Link from 'next/link';  
 import { useState } from 'react';  
   
@@ -24,6 +24,14 @@ const Navbar = ({ onToggleNyayabodhini, onToggleDeepika, onTogglePadakrytam }) =
     const newCheckedState = !padakrytamChecked;  
     setPadakrytamChecked(newCheckedState);  
     onTogglePadakrytam(newCheckedState);  
+  };  
+  
+  const handleNavLinkClick = () => {  
+    const navbarToggler = document.querySelector('.navbar-toggler');  
+    const navbarCollapse = document.querySelector('.navbar-collapse');  
+    if (navbarToggler && navbarCollapse.classList.contains('show')) {  
+      navbarToggler.click();  
+    }  
   };  
   
   return (  
@@ -57,11 +65,11 @@ const Navbar = ({ onToggleNyayabodhini, onToggleDeepika, onTogglePadakrytam }) =
               प्रत्यक्षपरिच्छेदः  
             </a>  
             <div className="dropdown-menu" aria-labelledby="pratyaksha-nav-dropdown">  
-              <Link href="/pratyaksha" className="dropdown-item">मङ्गलम्</Link>  
-              <Link href="/pratyaksha#section-मङ्गलवादः" className="dropdown-item">मङ्गलवादः</Link>  
-              <Link href="/pratyaksha#section-सप्तपदार्थाः" className="dropdown-item">सप्तपदार्थाः</Link>  
-              <Link href="/pratyaksha#section-द्रव्याणि" className="dropdown-item">द्रव्याणि</Link>  
-              <Link href="/pratyaksha#section-गुणाः" className="dropdown-item">गुणाः</Link>  
+              <Link href="/pratyaksha" className="dropdown-item" onClick={handleNavLinkClick}>मङ्गलम्</Link>  
+              <Link href="/pratyaksha#section-मङ्गलवादः" className="dropdown-item" onClick={handleNavLinkClick}>मङ्गलवादः</Link>  
+              <Link href="/pratyaksha#section-सप्तपदार्थाः" className="dropdown-item" onClick={handleNavLinkClick}>सप्तपदार्थाः</Link>  
+              <Link href="/pratyaksha#section-द्रव्याणि" className="dropdown-item" onClick={handleNavLinkClick}>द्रव्याणि</Link>  
+              <Link href="/pratyaksha#section-गुणाः" className="dropdown-item" onClick={handleNavLinkClick}>गुणाः</Link>  
             </div>  
           </li>  
           <li className="nav-item dropdown">  
@@ -77,10 +85,10 @@ const Navbar = ({ onToggleNyayabodhini, onToggleDeepika, onTogglePadakrytam }) =
               अनुमानपरिच्छेदः  
             </a>  
             <div className="dropdown-menu" aria-labelledby="anumana-nav-dropdown">  
-              <Link href="/anumana" className="dropdown-item">मुखम्</Link>  
-              <Link href="/anumana#section-Option1" className="dropdown-item">Option 1</Link>  
-              <Link href="/anumana#section-Option2" className="dropdown-item">Option 2</Link>  
-              <Link href="/anumana#section-Option3" className="dropdown-item">Option 3</Link>  
+              <Link href="/anumana" className="dropdown-item" onClick={handleNavLinkClick}>मुखम्</Link>  
+              <Link href="/anumana#section-Option1" className="dropdown-item" onClick={handleNavLinkClick}>Option 1</Link>  
+              <Link href="/anumana#section-Option2" className="dropdown-item" onClick={handleNavLinkClick}>Option 2</Link>  
+              <Link href="/anumana#section-Option3" className="dropdown-item" onClick={handleNavLinkClick}>Option 3</Link>  
             </div>  
           </li>  
           <li className="nav-item dropdown">  
@@ -96,10 +104,10 @@ const Navbar = ({ onToggleNyayabodhini, onToggleDeepika, onTogglePadakrytam }) =
               उपमानपरिच्छेदः  
             </a>  
             <div className="dropdown-menu" aria-labelledby="upamana-nav-dropdown">  
-              <Link href="/upamana" className="dropdown-item">मुखम्</Link>  
-              <Link href="/upamana#section-Option1" className="dropdown-item">Option 1</Link>  
-              <Link href="/upamana#section-Option2" className="dropdown-item">Option 2</Link>  
-              <Link href="/upamana#section-Option3" className="dropdown-item">Option 3</Link>  
+              <Link href="/upamana" className="dropdown-item" onClick={handleNavLinkClick}>मुखम्</Link>  
+              <Link href="/upamana#section-Option1" className="dropdown-item" onClick={handleNavLinkClick}>Option 1</Link>  
+              <Link href="/upamana#section-Option2" className="dropdown-item" onClick={handleNavLinkClick}>Option 2</Link>  
+              <Link href="/upamana#section-Option3" className="dropdown-item" onClick={handleNavLinkClick}>Option 3</Link>  
             </div>  
           </li>  
           <li className="nav-item dropdown">  
@@ -115,10 +123,10 @@ const Navbar = ({ onToggleNyayabodhini, onToggleDeepika, onTogglePadakrytam }) =
               शब्दपरिच्छेदः  
             </a>  
             <div className="dropdown-menu" aria-labelledby="shabda-nav-dropdown">  
-              <Link href="/shabda" className="dropdown-item">मुखम्</Link>  
-              <Link href="/shabda#section-Option1" className="dropdown-item">Option 1</Link>  
-              <Link href="/shabda#section-Option2" className="dropdown-item">Option 2</Link>  
-              <Link href="/shabda#section-Option3" className="dropdown-item">Option 3</Link>  
+              <Link href="/shabda" className="dropdown-item" onClick={handleNavLinkClick}>मुखम्</Link>  
+              <Link href="/shabda#section-Option1" className="dropdown-item" onClick={handleNavLinkClick}>Option 1</Link>  
+              <Link href="/shabda#section-Option2" className="dropdown-item" onClick={handleNavLinkClick}>Option 2</Link>  
+              <Link href="/shabda#section-Option3" className="dropdown-item" onClick={handleNavLinkClick}>Option 3</Link>  
             </div>  
           </li>  
           <li className="nav-item dropdown">  
