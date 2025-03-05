@@ -9,13 +9,13 @@ import importlib
 import base_html
 
 file_maps = [
-    (pariccheda, osp.join("sanitized", f"{pariccheda}.xml"), osp.join("nextapp", "public", f"{pariccheda}.html"))
+    (pariccheda, osp.join("sanitized", f"{pariccheda}.xml"), osp.join("public", f"{pariccheda}.html"))
         for pariccheda in ["pratyaksha", "anumana", "upamana", "shabda"]
 ]
 
 while True:
     importlib.reload(base_html)
-    with open(osp.join("nextapp", "public", "index.html"), 'w', encoding='utf-8') as f:
+    with open(osp.join("public", "index.html"), 'w', encoding='utf-8') as f:
         f.write(base_html.index_html)
         print("Updated index.html")
     for pariccheda, xml_path, html_path in file_maps:
