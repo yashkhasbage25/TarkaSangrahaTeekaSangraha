@@ -43,7 +43,7 @@ class GranthaPage extends Component<GranthaPageProps, GranthaPageState> {
       const bookTitle = romanizedBookTitles[i];
       // make a fetch call to the API to `http://localhost:8000/${bookTitle}.json`
       // print erros to the console if any
-      const response = await fetch(`http://localhost:8000/${bookTitle}.json`);
+      const response = await fetch(`https://raw.githubusercontent.com/yashkhasbage25/TarkaSangrahaTeekaSangraha/refs/heads/main/nyayarepo/json_data/${bookTitle}.json`);
       const data = await response.json();
       const book: Book = data;
       books.push(book);
