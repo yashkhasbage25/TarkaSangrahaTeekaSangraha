@@ -8,7 +8,7 @@ export class BooksLayout extends Component<BooksLayoutProps> {
     this.alignedSections = this.alignSections(props.books);  
   }  
   
-  sectionRefs: { [key: string]: React.RefObject<HTMLDivElement> } = {};  
+  sectionRefs: { [key: string]: React.RefObject<HTMLDivElement | null> } = {};  
   alignedSections: { base: BookSection; commentaries: { commentary: BookSection, bookTitle: string }[] }[];  
   
   alignSections = (books: Book[]): { base: BookSection; commentaries: { commentary: BookSection, bookTitle: string }[] }[] => {  
