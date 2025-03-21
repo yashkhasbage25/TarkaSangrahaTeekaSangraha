@@ -1,0 +1,1332 @@
+[
+    {
+        "title": "प्रारम्भः",
+        "tags": [
+            "विश्वेशं",
+            "गुरुवन्दनम्",
+            "तर्कसंग्रहः"
+        ],
+        "content": "निधाय हृदि विश्वेशं विधाय गुरुवन्दनम्।\nबालानां सुखबोधाय क्रियते तर्कसंग्रहः॥",
+        "translation": "Placing the Lord of the Universe in the heart and offering respects to the Guru, Tarka Sangraha is composed for the easy understanding of children.",
+        "sectionId": 1
+    },
+    {
+        "title": "सप्तपदार्थाः",
+        "tags": [
+            "द्रव्य",
+            "गुण",
+            "कर्म",
+            "सामान्य",
+            "विशेष",
+            "समवाय",
+            "अभाव"
+        ],
+        "content": "द्रव्यगुणकर्मसामान्यविशेषसमवायाऽभावाः सप्तपदार्थाः ॥ १॥",
+        "translation": "Substances, qualities, actions, generalities, particularities, inherence, and non-existence are the seven categories.",
+        "sectionId": 2
+    },
+    {
+        "title": "द्रव्याणि",
+        "tags": [
+            "पृथिवी",
+            "अप्",
+            "तेजस्",
+            "वायुः",
+            "आकाशः",
+            "कालः",
+            "दिक्",
+            "आत्मा",
+            "मनः"
+        ],
+        "content": "तत्र द्रव्याणि पृथिव्यप्तेजोवाय्वाकाशाकालदिगात्ममनांसि नवैव ॥ २॥",
+        "translation": "The substances are nine in number: earth, water, fire, air, ether, time, direction, soul, and mind.",
+        "sectionId": 3
+    },
+    {
+        "title": "गुणाः",
+        "tags": [
+            "रूप",
+            "रस",
+            "गन्ध",
+            "स्पर्श",
+            "संख्या",
+            "परिमाण",
+            "पृथक्त्व",
+            "संयोग",
+            "विभाग",
+            "परत्व",
+            "अपरत्व",
+            "गुरुत्व",
+            "द्रवत्व",
+            "स्नेह",
+            "शब्द",
+            "बुद्धि",
+            "सुख",
+            "दुःख",
+            "इच्छ",
+            "द्वेष",
+            "प्रयत्न",
+            "धर्म",
+            "अधर्म",
+            "संस्कार"
+        ],
+        "content": "रूपरसगन्धस्पर्शसंख्यापरिमाणपृथक्त्वसंयोगविभागपरत्वापरत्वगुरुत्वद्रवत्वस्नेहशब्दबुद्धिसुखदुःखेच्छाद्वेषप्रयत्नधर्माधर्मसंस्काराः चतुर्विंशतिर्गुणाः ॥ ३॥",
+        "translation": "Form, taste, smell, touch, number, dimension, separateness, conjunction, disjunction, prior, posterior, heaviness, liquidity, viscosity, sound, knowledge, happiness, misery, desire, aversion, effort, merit, demerit, and impression are the twenty-four qualities.",
+        "sectionId": 4
+    },
+    {
+        "title": "कर्माणि",
+        "tags": [
+            "उत्क्षेपण",
+            "अपक्षेपण",
+            "अकुञ्चन",
+            "प्रसारण",
+            "गमन"
+        ],
+        "content": "उत्क्षेपणापक्षेपणाकुञ्चनप्रसारणगमनानि पञ्च कर्माणि ॥ ४॥",
+        "translation": "Throwing up, throwing down, contraction, expansion, and movement are the five actions.",
+        "sectionId": 5
+    },
+    {
+        "title": "सामान्यं",
+        "tags": [
+            "परम",
+            "अपर"
+        ],
+        "content": "परमपरं चेति द्विविधं सामान्यम् ॥ ५॥",
+        "translation": "Generality is of two kinds: higher and lower.",
+        "sectionId": 6
+    },
+    {
+        "title": "विशेषाः",
+        "tags": [
+            "नित्यद्रव्यवृत्ति"
+        ],
+        "content": "नित्यद्रव्यवृत्तयो विशेषास्त्वनन्ता एव ॥ ६॥",
+        "translation": "Particularities residing in eternal substances are indeed infinite.",
+        "sectionId": 7
+    },
+    {
+        "title": "समवायः",
+        "tags": [
+            "समवाय"
+        ],
+        "content": "समवायस्त्वेक एव ॥ ७॥",
+        "translation": "Inherence is only one.",
+        "sectionId": 8
+    },
+    {
+        "title": "अभावः",
+        "tags": [
+            "प्रागभाव",
+            "प्रध्वंसाभाव",
+            "अत्यन्ताभाव",
+            "अन्योन्याभाव"
+        ],
+        "content": "अभावश्चतुर्विधः प्रागभावः प्रध्वंसाभावः अत्यन्ताभावः अन्योन्याभावश्चेति ॥ ८॥",
+        "translation": "Non-existence is of four types: prior non-existence, destructional non-existence, absolute non-existence, and mutual non-existence.",
+        "sectionId": 9
+    },
+    {
+        "title": "पृथिवी",
+        "tags": [
+            "गन्धवती",
+            "नित्या",
+            "अनित्या",
+            "परमाणु",
+            "कार्यरूपा",
+            "शरीर",
+            "इन्द्रिय",
+            "विषय"
+        ],
+        "content": "तत्र गन्धवती पृथिवी। सा द्विविधानित्याऽनित्या च। नित्याः परमाणुरूपाः। अनित्याः कार्यरूपाः। पुनस्त्रिविधाः शरीरेन्द्रियविषयभेदात्। शरीरमस्मदादीनाम्। इन्द्रियं गन्धग्राहकं घ्राणम्। तच्च नासाग्रवर्ति। विषयो मृत्पाषाणादिः ॥ ९॥",
+        "translation": "Earth possesses smell. It is of two types: eternal and non-eternal. The eternal form is atomic. The non-eternal form is effectual. It is further divided into three: body, sense, and object. The body is ours. The sense is the smell receptor, nose tip. The object is clay, stone, etc.",
+        "sectionId": 10
+    },
+    {
+        "title": "आपः",
+        "tags": [
+            "शीतस्पर्शवती",
+            "नित्या",
+            "अनित्या",
+            "परमाणु",
+            "कार्यरूपा",
+            "शरीर",
+            "इन्द्रिय",
+            "विषय"
+        ],
+        "content": "शीतस्पर्शवत्यः आपः। ता द्विविधाः नित्या अनित्याश्च। नित्याः परमाणुरूपाः। अनित्याः कार्यरूपाः। पुनस्त्रिविधा शरीरेन्द्रियविषयभेदात्। शरीरं वरुणलोके। इन्द्रियं रसग्राहकं रसनं जिह्वाग्रवर्ति। विषयः सरित्समुद्रादिः ॥ १०॥",
+        "translation": "Water possesses cold touch. It is of two types: eternal and non-eternal. The eternal form is atomic. The non-eternal form is effectual. It is further divided into three: body, sense, and object. The body is in Varuna's realm. The sense is the taste receptor, tongue tip. The object is rivers, seas, etc.",
+        "sectionId": 11
+    },
+    {
+        "title": "तेजः",
+        "tags": [
+            "उष्णस्पर्शवती",
+            "नित्या",
+            "अनित्या",
+            "परमाणु",
+            "कार्यरूपा",
+            "शरीर",
+            "इन्द्रिय",
+            "विषय"
+        ],
+        "content": "उष्णस्पर्शवत्तेजः। तच्च द्विविधं नित्यमनित्यं च। नित्यं परमाणुरूपम्। अनित्यं कार्यरूपम्। पुनस्त्रिविधं शरीरेन्द्रियविषयभेदात्। शरीरमादित्यलोके प्रसिद्धम्। इन्द्रियं रूपग्राहकं चक्षुः कृष्णताराग्रवर्ति। विषयश्चतुर्विधः भौमदिव्यौदर्याकरजभेदात्। भौमं वह्न्यादिकम्। अबिन्धनं दिव्यं विद्युदादि। भुक्तस्य परिणामहेतुरौदर्यम्। आकरजं सुवर्णादि ॥ ११॥",
+        "translation": "Fire possesses hot touch. It is of two types: eternal and non-eternal. The eternal form is atomic. The non-eternal form is effectual. It is further divided into three: body, sense, and object. The body is renowned in the Sun's realm. The sense is the form receptor, eye tip. The object is of four types: terrestrial, celestial, digestive, and mineral. Terrestrial is fire, etc. Celestial is lightning, etc. Digestive is the cause of the transformation of consumed food. Mineral is gold, etc.",
+        "sectionId": 12
+    },
+    {
+        "title": "वायुः",
+        "tags": [
+            "रूपरहीतः",
+            "स्पर्शवान्",
+            "नित्या",
+            "अनित्या",
+            "परमाणु",
+            "कार्यरूपा",
+            "शरीर",
+            "इन्द्रिय",
+            "विषय"
+        ],
+        "content": "रूपरहीतः स्पर्शवान्वायुः। स द्विविधः नित्योऽनित्यश्च। नित्यः परमाणुरूपः। अनित्यः कार्यरूपः। पुनस्त्रिविधः शरीरेन्द्रियविषयभेदात्। शरीरं वायुलोके। इन्द्रियं स्पर्शग्राहकं त्वक्सर्वशरीरवर्ति। विषययो वृक्षादिकम्पनहेतुः ॥ १२॥",
+        "translation": "Air is devoid of form and possesses touch. It is of two types: eternal and non-eternal. The eternal form is atomic. The non-eternal form is effectual. It is further divided into three: body, sense, and object. The body is in the realm of air. The sense is the touch receptor, skin, present all over the body. The object is the cause of tree shaking, etc.",
+        "sectionId": 13
+    },
+    {
+        "title": "प्राणः",
+        "tags": [
+            "शरीरान्तःसंचारी",
+            "वयुः"
+        ],
+        "content": "शरीरान्तःसंचारी वयुः प्राणः। स च एकोऽप्युपाधिभेदात्प्राणापानादिसंज्ञां लभते ॥ १३॥",
+        "translation": "The air moving inside the body is Prana. Though one, it is known by different names like Prana, Apana, etc., due to the differences in functions.",
+        "sectionId": 14
+    },
+    {
+        "title": "आकाशः",
+        "tags": [
+            "शब्दगुणक",
+            "एकं",
+            "विभु",
+            "नित्यं"
+        ],
+        "content": "शब्दगुणकमाकाशम्। तच्चैकं विभु नित्यञ्च ॥ १४॥",
+        "translation": "Ether possesses sound as its quality. It is one, all-pervading, and eternal.",
+        "sectionId": 15
+    },
+    {
+        "title": "कालः",
+        "tags": [
+            "अतीतादिव्यवहारहेतु",
+            "एकं",
+            "विभु",
+            "नित्यं"
+        ],
+        "content": "अतीतादिव्यवहारहेतुः कालः। स चैको विभुर्नित्यश्च ॥ १५॥",
+        "translation": "Time is the cause of past, etc., transactions. It is one, all-pervading, and eternal.",
+        "sectionId": 16
+    },
+    {
+        "title": "दिक्",
+        "tags": [
+            "प्राच्यादिव्यवहारहेतु",
+            "एका",
+            "विभ्वी",
+            "नित्या"
+        ],
+        "content": "प्राच्यादिव्यवहारहेतुर्दिक्। सा चैका विभ्वी नित्या च ॥ १६॥",
+        "translation": "Direction is the cause of east, etc., transactions. It is one, all-pervading, and eternal.",
+        "sectionId": 17
+    },
+    {
+        "title": "आत्मा",
+        "tags": [
+            "ज्ञानाधिकरणम्",
+            "परमात्मा",
+            "जीवात्मा",
+            "विभु",
+            "नित्यं",
+            "सर्वज्ञः"
+        ],
+        "content": "ज्ञानाधिकरणमात्मा। स द्विविधः परमात्मा जीवात्मा च। तत्रेश्वरः सर्वज्ञः परमात्मैक एव। जीवात्मा प्रतिशरीरं भिन्नो विभुर्नित्यश्च ॥ १७॥",
+        "translation": "Soul is the substrate of knowledge. It is of two types: Supreme Soul and individual soul. God is the omniscient Supreme Soul, and He is one. The individual soul is different in each body, all-pervading, and eternal.",
+        "sectionId": 18
+    },
+    {
+        "title": "मनः",
+        "tags": [
+            "सुखाद्युपलब्धिसाधनम्",
+            "प्रत्यात्मनियतत्वात्",
+            "अनन्तम्",
+            "परमाणुरूपं",
+            "नित्यं"
+        ],
+        "content": "सुखाद्युपलब्धिसाधनमिन्द्रियं मनः। तच्च प्रत्यात्मनियतत्वादनन्तं परमाणुरूपं नित्यं च ॥ १८॥",
+        "translation": "Mind is the sense organ for the perception of happiness, etc. It is infinite due to being specific to each individual, atomic, and eternal.",
+        "sectionId": 19
+    },
+    {
+        "title": "रूपम्",
+        "tags": [
+            "चक्षुर्मात्रग्राह्य",
+            "शुक्ल",
+            "नील",
+            "पीत",
+            "रक्त",
+            "हरित",
+            "कपिश",
+            "चिन्न",
+            "पृथिवी",
+            "जल",
+            "तेजस्"
+        ],
+        "content": "चक्षुर्मात्रग्राह्यो गुणो रूपम्। तच्च शुक्लनीलपीतरक्तहरितकपिशचिन्नभेदात्सप्तविधम्। पृथिवीजलतेजोवृत्ति। तत्र पृथिव्यां सप्तविधम्। अभास्वरशुक्लं जले। भास्वरशुक्लं तेजसि ॥ १९॥",
+        "translation": "Form is a quality perceived only by the eye. It is of seven types: white, blue, yellow, red, green, brown, and variegated. It resides in earth, water, and fire. In earth, it is of seven types. In water, it is resplendent white. In fire, it is resplendent white.",
+        "sectionId": 20
+    },
+    {
+        "title": "रसः",
+        "tags": [
+            "रसनग्राह्य",
+            "मधुर",
+            "अम्ल",
+            "लवण",
+            "कटु",
+            "कषाय",
+            "तिक्त",
+            "पृथिवी",
+            "जल"
+        ],
+        "content": "रसनग्राह्यो गुणो रसः। स च मधुराम्ललवणकटुकषायतिक्तभेदात् षड्विधः। पृथिवीजलवृत्तिः। तत्र पृथिव्यां षड्विधः। जले मधुर एव ॥ २०॥",
+        "translation": "Taste is a quality perceived by the tongue. It is of six types: sweet, sour, salty, pungent, astringent, and bitter. It resides in earth and water. In earth, it is of six types. In water, it is only sweet.",
+        "sectionId": 21
+    },
+    {
+        "title": "गन्धः",
+        "tags": [
+            "घ्राणग्राह्य",
+            "सुरभि",
+            "असुरभि",
+            "पृथिवी"
+        ],
+        "content": "घ्राणग्राह्यो गुणो गन्धः। स द्विविधः सुरभिरसुरभिश्च। पृथिवीमात्रवृत्तिः ॥ २१॥",
+        "translation": "Smell is a quality perceived by the nose. It is of two types: fragrant and non-fragrant. It resides only in earth.",
+        "sectionId": 22
+    },
+    {
+        "title": "स्पर्शः",
+        "tags": [
+            "त्वगिन्द्रियमात्रग्राह्य",
+            "शीत",
+            "उष्ण",
+            "अनुष्णाशीत",
+            "पृथिवी",
+            "अप्",
+            "तेजस्",
+            "वायुः"
+        ],
+        "content": "त्वगिन्द्रियमात्रग्राह्यो गुणः स्पर्शः। स च त्रिविधः शीतोष्णानुष्णाशीतभेदात्। पृथिव्यप्तेजोवायुवृत्तिः। तत्र शीतो जले। उष्णस्तेजसि। अनुष्णाशीतः पृथिवीवाय्वोः ॥ २२॥",
+        "translation": "Touch is a quality perceived only by the skin. It is of three types: cold, hot, and neither hot nor cold. It resides in earth, water, fire, and air. In water, it is cold. In fire, it is hot. In earth and air, it is neither hot nor cold.",
+        "sectionId": 23
+    },
+    {
+        "title": "रूपादिचतुष्टयं",
+        "tags": [
+            "पृथिवी",
+            "अपाकज",
+            "नित्यं",
+            "अनित्यं"
+        ],
+        "content": "रूपादिचतुष्टयं पृथिव्यां पाकजमनित्यं च। अन्यत्र अपाकजं नित्यमनित्यं च। नित्यगतं नित्यम्। अनित्यगतमनित्यम् ॥ २३॥",
+        "translation": "Form and the other three (taste, smell, touch) in earth produced by cooking are non-eternal. Elsewhere, not produced by cooking, they are eternal and non-eternal. Residing in the eternal, they are eternal. Residing in the non-eternal, they are non-eternal.",
+        "sectionId": 24
+    },
+    {
+        "title": "संख्या",
+        "tags": [
+            "एकत्व",
+            "द्वित्व",
+            "परार्ध",
+            "नित्यं",
+            "अनित्यं"
+        ],
+        "content": "एकत्वादिव्यवहारहेतुः संख्या। सा नवद्रव्यवृत्तिः एकत्वादिपरार्धपर्यन्ता। एकत्वं नित्यमनित्यं च। नित्यगतं नित्यम्। अनित्यगतमनित्यम्। द्वित्वादिकं तु सर्वत्राऽनित्यमेव ॥ २४॥",
+        "translation": "Number is the cause of transactions like unity, etc. It resides in nine substances, ranging from unity to the highest number. Unity is eternal and non-eternal. Residing in the eternal, it is eternal. Residing in the non-eternal, it is non-eternal. Duality, etc., are non-eternal everywhere.",
+        "sectionId": 25
+    },
+    {
+        "title": "परिमाणम्",
+        "tags": [
+            "मानव्यवहार",
+            "अनु",
+            "महत्",
+            "दीर्घ",
+            "हृस्व"
+        ],
+        "content": "मानव्यवहारासाधारणकारणं परिमाणम्। नवद्रव्यवृत्तिः। तच्चतुर्विधम्। अनु महद्दीर्घं हृस्वं चेति ॥ २५॥",
+        "translation": "Dimension is the specific cause of measurement transactions. It resides in nine substances. It is of four types: minute, large, long, and short.",
+        "sectionId": 26
+    },
+    {
+        "title": "पृथक्त्वम्",
+        "tags": [
+            "पृथग्व्यवहार",
+            "सर्वद्रव्यवृत्ति"
+        ],
+        "content": "पृथग्व्यवहारासाधारणकारणं पृथक्त्वम्। सर्वद्रव्यवृत्तिः ॥ २६॥",
+        "translation": "Separateness is the specific cause of separateness transactions. It resides in all substances.",
+        "sectionId": 27
+    },
+    {
+        "title": "संयोगः",
+        "tags": [
+            "संयुक्तव्यवहार",
+            "सर्वद्रव्यवृत्ति"
+        ],
+        "content": "संयुक्तव्यवहारहेतुः संयोगः। सर्वद्रव्यवृत्तिः ॥ २७॥",
+        "translation": "Conjunction is the cause of conjunction transactions. It resides in all substances.",
+        "sectionId": 28
+    },
+    {
+        "title": "विभागः",
+        "tags": [
+            "संयोगनाशक",
+            "सर्वद्रव्यवृत्ति"
+        ],
+        "content": "संयोगनाशको गुणो विभागः। सर्वद्रव्यवृत्तिः ॥ २८॥",
+        "translation": "Disjunction is a quality that destroys conjunction. It resides in all substances.",
+        "sectionId": 29
+    },
+    {
+        "title": "परत्वापरत्वे",
+        "tags": [
+            "परत्व",
+            "अपरत्व",
+            "पृथिवी",
+            "अप्",
+            "तेजस्",
+            "वायुः",
+            "मनः",
+            "दिक्कृत",
+            "कालकृत"
+        ],
+        "content": "परापरव्यवहारासाधारणकारणे परत्वापरत्वे। पृथिव्यादिचतुष्टय मनोवृत्तिनी। ते द्विविधे दिक्कृते कालकृते च। दूरस्ते दिक्कृतं परत्वम्। समीपस्थे दिक्कृतमपरत्वम्। ज्येष्ठे कालकृतं परत्वम्। कनिष्ठे कालकृतमपरत्वम् ॥ २९॥",
+        "translation": "Prior and posterior are specific causes of prior and posterior transactions. They reside in earth, water, fire, air, and mind. They are of two types: space-created and time-created. Far in space is prior. Near in space is posterior. Elder in time is prior. Younger in time is posterior.",
+        "sectionId": 30
+    },
+    {
+        "title": "गुरुत्वम्",
+        "tags": [
+            "आद्यपतनासमवायि",
+            "पृथिवी",
+            "जल"
+        ],
+        "content": "आद्यपतनासमवायिकारणं गुरुत्वम्। पृथिवीजलवृत्ति ॥ ३०॥",
+        "translation": "Heaviness is the inherent cause of initial falling. It resides in earth and water.",
+        "sectionId": 31
+    },
+    {
+        "title": "द्रवत्वम्",
+        "tags": [
+            "आदस्यन्दनासमवायि",
+            "पृथिवी",
+            "अप्",
+            "तेजस्",
+            "सांसिद्धिक",
+            "नैमित्तिक"
+        ],
+        "content": "आद्यस्यन्दनासमवायिकारणं द्रवत्वम्। पृथिव्यप्तेजो",
+        "translation": null,
+        "sectionId": 32
+    },
+    {
+        "title": "अनुमानम्",
+        "tags": [
+            "अनुमानम्",
+            "परामर्शः",
+            "ज्ञानम्"
+        ],
+        "content": "अनुमितिकरणमनुमानम् ।",
+        "translation": "Anumiti is the process of inference.",
+        "sectionId": 33
+    },
+    {
+        "title": "अनुमितिः",
+        "tags": [
+            "अनुमिति",
+            "परामर्शः",
+            "ज्ञानम्"
+        ],
+        "content": "परामर्शजन्यं ज्ञानमनुमितिः ।",
+        "translation": "Anumiti is knowledge generated from Parāmarśa (reflection).",
+        "sectionId": 34
+    },
+    {
+        "title": "परामर्शः",
+        "tags": [
+            "परामर्शः",
+            "ज्ञानम्",
+            "व्याप्ति",
+            "पक्षधर्मता"
+        ],
+        "content": "व्याप्तिविशिष्टपक्षधर्मताज्ञानम् । यथा वह्निव्याप्यधूमवानयं पर्वत इति ज्ञानं परामर्शः ।",
+        "translation": "Reflection (Parāmarśa) is knowledge of the presence of the attribute of the subject qualified by Vyāpti (pervasion). For example, the knowledge \"this mountain has smoke, which is pervaded by fire\" is reflection.",
+        "sectionId": 35
+    },
+    {
+        "title": "अनुमिति",
+        "tags": [
+            "अनुमिति",
+            "पर्वतः",
+            "वह्निमान्",
+            "ज्ञानम्"
+        ],
+        "content": "तज्जन्यं पर्वतो वह्निमानिति ज्ञानमनुमितिः ।",
+        "translation": "The knowledge generated from that reflection is inference, such as \"the mountain has fire.\"",
+        "sectionId": 36
+    },
+    {
+        "title": "व्याप्तिः",
+        "tags": [
+            "व्याप्तिः",
+            "साहचर्यनियमः",
+            "धूमः",
+            "अग्निः"
+        ],
+        "content": "यत्र यत्र धूमस्तत्र तत्राग्निरिति साहचर्यनियमो व्याप्तिः ।",
+        "translation": "The rule of association \"wherever there is smoke, there is fire\" is Vyāpti (pervasion).",
+        "sectionId": 37
+    },
+    {
+        "title": "पक्षधर्मता",
+        "tags": [
+            "पक्षधर्मता",
+            "पर्वतः",
+            "धूमः"
+        ],
+        "content": "व्याप्यस्य पर्वतादिवृत्तित्वं पक्षधर्मता ।",
+        "translation": "The attribute of the subject, such as the presence of smoke on the mountain, is Pakṣadharmatā.",
+        "sectionId": 38
+    },
+    {
+        "title": "अनुमानं द्विविधम्",
+        "tags": [
+            "अनुमानम्",
+            "द्विविधम्",
+            "स्वार्थम्",
+            "परार्थम्"
+        ],
+        "content": "अनुमानं द्विविधं स्वार्थं परार्थं च ।",
+        "translation": "Inference is of two kinds: Svārtha (for oneself) and Parārtha (for others).",
+        "sectionId": 39
+    },
+    {
+        "title": "स्वार्थानुमानम्",
+        "tags": [
+            "स्वार्थम्",
+            "अनुमानम्",
+            "लिङ्गपरामर्शः",
+            "ज्ञानम्"
+        ],
+        "content": "तत्र स्वार्थं स्वानुमितिहेतुः तथाहि स्वायमेव भूयोदर्शनेन यत्र यत्र धूमस्तत्र तत्राग्निरिति महानसादौ व्याप्तिं गृहीत्वा पर्वतसमीपं गतः तद्गते चाग्नौ सन्दिहानः पर्वते धूमं पश्यन्व्याप्तिं स्मरति यत्र यत्र धूमस्तत्र तत्राग्निरिति । तदनन्तरं वह्निव्याप्यधुमवानयं पर्वत इति ज्ञानमुत्पद्यते अयमेव लिङ्गपरामर्श इत्युच्यते । तस्मात्पर्वतो वह्निमानिति ज्ञानमनुमितिः उत्पद्यते । तदेतत्स्वार्थानुमानम् ।",
+        "translation": "Svārtha inference is for oneself. For example, seeing smoke on the mountain and remembering the Vyāpti (where there is smoke, there is fire), one infers that the mountain has fire. This process is called Liṅgaparāmarśa (reflection on the mark).",
+        "sectionId": 40
+    },
+    {
+        "title": "परार्थानुमानम्",
+        "tags": [
+            "परार्थम्",
+            "अनुमानम्",
+            "पञ्चावयववाक्यम्"
+        ],
+        "content": "यत्तु स्वयं धुमाग्निमनुमाय परंप्रतिबोधयितुं पञ्चावयव वाक्यं प्रयुज्यते तत्परार्थानुमानम् । यथा पर्वतो वह्निमान्धूमत्वाद्यो यो धूमवान्स वह्निमान्यथा महानसः तथा चायं तस्मात्तथेति । अनेन प्रतिपादिताल्लिङ्गात्परोऽप्यग्निं प्रतिपद्यते ।",
+        "translation": "Parārtha inference is for others. It uses a five-membered sentence to communicate the inference. For example, \"The mountain has fire because it has smoke, as seen in the kitchen. Therefore, this mountain also has fire.\"",
+        "sectionId": 41
+    },
+    {
+        "title": "पञ्चावयवाः",
+        "tags": [
+            "पञ्चावयवाः",
+            "प्रतिज्ञा",
+            "हेतुः",
+            "उदाहरणम्",
+            "उपनयः",
+            "निगमनम्"
+        ],
+        "content": "प्रतिज्ञाहेतूदाहरणोपनयनिगमनानि पञ्चावयवाः । पर्वतो वह्निमानिति प्रतिज्ञा । धूमवत्वादिति हेतुः । यो यो धूमवान्स वह्निमान्यथा महानस इत्युदाहरणम् । तथा चायमित्युपनयः । तस्मात्तथेति निगमनम् ।",
+        "translation": "The five members are: Pratijñā (proposition), Hetu (reason), Udāharaṇa (example), Upanaya (application), and Nigamana (conclusion). For example: \"The mountain has fire\" (proposition), \"because it has smoke\" (reason), \"like the kitchen\" (example), \"and this mountain also has smoke\" (application), \"therefore, it has fire\" (conclusion).",
+        "sectionId": 42
+    },
+    {
+        "title": "लिङ्गपरामर्शः",
+        "tags": [
+            "लिङ्गपरामर्शः",
+            "स्वार्थानुमानम्",
+            "परार्थानुमानम्"
+        ],
+        "content": "स्वार्थानुमितिपरार्थानुमित्योः लिङ्गपरामर्श एव करणम् । तस्माल्लिङ्गपरामर्शोऽनुमानम् ।",
+        "translation": "Liṅgaparāmarśa (reflection on the mark) is the process in both Svārtha and Parārtha inference. Therefore, Liṅgaparāmarśa is inference.",
+        "sectionId": 43
+    },
+    {
+        "title": "लिङ्गम् त्रिविधम्",
+        "tags": [
+            "लिङ्गम्",
+            "त्रिविधम्",
+            "अन्वयव्यतिरेकि",
+            "केवलान्वयि",
+            "केवलव्यतिरेकि"
+        ],
+        "content": "लिङ्गं त्रिविधम् । अन्वयव्यतिरेकि केवलान्वयि केवलव्यतिरेकि चेति ।",
+        "translation": "The mark (Liṅga) is of three kinds: Anvayavyatireki (both positive and negative correlation), Kevalānvayi (only positive correlation), and Kevalavyatireki (only negative correlation).",
+        "sectionId": 44
+    },
+    {
+        "title": "अन्वयव्यतिरेकि",
+        "tags": [
+            "अन्वयव्यतिरेकि",
+            "व्याप्तिः",
+            "पर्वतः",
+            "वह्नि",
+            "धूमः"
+        ],
+        "content": "अन्वयेन व्यतिरेकेण च व्याप्तिमदन्वयव्यतिरेकि । यथा वह्नौ साध्ये धूमवत्त्वम् । यत्र धूमस्तत्राग्निर्यथा महानस इत्यन्वयव्याप्तिः । यत्र वह्निर्नास्ति तत्र धूमोऽपि नास्ति यथा महाह्रिद इति व्यतिरेकव्याप्तिः ।",
+        "translation": "Anvayavyatireki has both positive and negative correlations. For example, in the case of fire, the presence of smoke is Anvayavyāpti (positive correlation), and the absence of smoke where there is no fire is Vyatirekavyāpti (negative correlation).",
+        "sectionId": 45
+    },
+    {
+        "title": "केवलान्वयि",
+        "tags": [
+            "केवलान्वयि",
+            "प्रमेयत्वम्",
+            "अभिधेयत्वम्"
+        ],
+        "content": "अन्वयमात्रव्याप्तिकं केवलान्वयि । यथा घटोऽभिधेयः प्रमेयत्वात्पटवत् । अत्र प्रमेयत्वाभिधेयत्वयोः व्यतिरेकव्याप्तिर्नास्ति सर्वस्यापि प्रमेयत्वादभिधेयत्वाच्च ।",
+        "translation": "Kevalānvayi has only positive correlation. For example, \"The pot is nameable because it is knowable, like a cloth.\" Here, there is no negative correlation between nameability and knowability.",
+        "sectionId": 46
+    },
+    {
+        "title": "केवलव्यतिरेकि",
+        "tags": [
+            "केवलव्यतिरेकि",
+            "पृथिवी",
+            "गन्धवत्त्वम्"
+        ],
+        "content": "व्यतिरेकमात्रव्याप्तिकं केवलव्यतिरेकि यथा पृथिवीतरेभ्यो भिद्यते गन्धवत्त्वात् । यदितरेभ्यो न भिद्यते न तद्गन्धवद्यथा जलम् । न चेयं तथा । तस्मान्न तथेति ।",
+        "translation": "Kevalavyatireki has only negative correlation. For example, \"Earth is different from other substances because of its smell. That which is not different from other substances does not have smell, like water.\"",
+        "sectionId": 47
+    },
+    {
+        "title": "पक्षः",
+        "tags": [
+            "पक्षः",
+            "पर्वतः",
+            "धूमः"
+        ],
+        "content": "सन्दिग्धसाध्यवान्पक्षः । यथा धूमवत्त्वे हेतौ पर्वतः ।",
+        "translation": "The subject (Pakṣa) is that which has an uncertain predicate. For example, the mountain in the case of smoke.",
+        "sectionId": 48
+    },
+    {
+        "title": "सपक्षः",
+        "tags": [
+            "सपक्षः",
+            "महानसः",
+            "पर्वतः",
+            "धूमः"
+        ],
+        "content": "निश्चितसाध्यवान्सपक्षः यथा तत्रैव महानसम् ।",
+        "translation": "The subject that has a certain predicate is Sapakṣa. For example, the kitchen in the case of smoke.",
+        "sectionId": 49
+    },
+    {
+        "title": "विपक्षः",
+        "tags": [
+            "विपक्षः",
+            "महाह्रदः",
+            "धूमः"
+        ],
+        "content": "निश्चितसाध्याऽभाववान्विपक्षः यथा तत्रैव महाह्रदः ।",
+        "translation": "The subject that has a certain absence of the predicate is Vipakṣa. For example, the lake in the case of smoke.",
+        "sectionId": 50
+    },
+    {
+        "title": "हेत्वाभासः",
+        "tags": [
+            "हेत्वाभासः",
+            "सव्यभिचारः",
+            "विरुद्धः",
+            "सत्प्रतिपक्षः",
+            "असिद्धः",
+            "बाधितः"
+        ],
+        "content": "सव्यभिचारविरुद्धसत्प्रतिपक्षासिद्धबाधिताः पञ्च हेत्वाभासाः ।",
+        "translation": "The five fallacies of reasoning are: Savyabhicāra (the unproven), Viruddha (the contradictory), Satpratipakṣa (the counterbalanced), Asiddha (the unestablished), and Bādhita (the countermanded).",
+        "sectionId": 51
+    },
+    {
+        "title": "सव्यभिचारः",
+        "tags": [
+            "सव्यभिचारः",
+            "अनैकान्तिकः",
+            "साधारणः",
+            "असाधारणः",
+            "अनुपसंहारी"
+        ],
+        "content": "सव्यभिचारोऽनैकान्तिकः । स त्रिविधः साधारणासाधारणानुपसंहारिभेदात् ।",
+        "translation": "Savyabhicāra (the unproven) is of three kinds: Sādhāraṇa (common), Asādhāraṇa (uncommon), and Anupasaṁhāri (indeterminate).",
+        "sectionId": 52
+    },
+    {
+        "title": "साधारणः",
+        "tags": [
+            "साधारणः",
+            "अनैकान्तिकः",
+            "पर्वतः",
+            "वह्नि",
+            "प्रमेयत्वम्"
+        ],
+        "content": "तत्र साध्याभाववद्वृत्तिः साधारणोऽनैकान्तिकः यथा पर्वतो वह्निमान्प्रमेयत्वादिति । प्रमेयत्वस्य वह्न्यभाववति ह्रदे विद्यमानत्वात् ।",
+        "translation": "Sādhāraṇa Anākāntika (common unproven) is when the reason is present in the absence of the predicate. For example, \"The mountain has fire because it is knowable.\" The knowability is present even in the lake, which does not have fire.",
+        "sectionId": 53
+    },
+    {
+        "title": "असाधारणः",
+        "tags": [
+            "असाधारणः",
+            "अनैकान्तिकः",
+            "शब्दः",
+            "नित्यः",
+            "शब्दत्वम्"
+        ],
+        "content": "सर्वसपक्षविपक्षव्यावृत्तः पक्षमात्रवृत्तिः असाधारणः । यथा शब्दो नित्यः शब्दत्वादिति । शब्दत्वं हि सर्वेभ्यो नित्येभ्योऽनित्येभ्यश्च व्यावृत्तं शब्दमात्रवृत्तिः ।",
+        "translation": "Asādhāraṇa Anākāntika (uncommon unproven) is when the reason is present only in the subject. For example, \"Sound is eternal because it is sound.\" The property of being sound is present only in sound, and not in other eternal or non-eternal things.",
+        "sectionId": 54
+    },
+    {
+        "title": "अनुपसंहारी",
+        "tags": [
+            "अनुपसंहारी",
+            "अनैकान्तिकः",
+            "प्रमेयत्वम्"
+        ],
+        "content": "अन्वयव्यतिरेकदृष्टान्तरहितोऽनुपसंहारी । यथा सर्वमनित्यं प्रमेयत्वादिति । अत्र सर्वस्यापि पक्षत्वाद्दृष्टान्तो नास्ति ।",
+        "translation": "Anupasaṁhāri Anākāntika (indeterminate unproven) is when there is no example with positive or negative correlation. For example, \"Everything is non-eternal because it is knowable.\" Here, there is no example as everything is the subject.",
+        "sectionId": 55
+    },
+    {
+        "title": "विरुद्धः",
+        "tags": [
+            "विरुद्धः",
+            "साध्याभावः",
+            "हेतुः",
+            "शब्दः",
+            "नित्यः",
+            "कृतकत्वम्"
+        ],
+        "content": "साध्याभावव्याप्तो हेतुर्विरुद्धः । यथा शब्दो नित्यः कृतकत्वादिति । कृतकत्वं हि नित्यत्वाभावेनाऽनित्यत्वेन व्याप्तम् ।",
+        "translation": "Viruddha (contradictory) is when the reason is pervaded by the absence of the predicate. For example, \"Sound is eternal because it is created.\" The property of being created is pervaded by non-eternity.",
+        "sectionId": 56
+    },
+    {
+        "title": "सत्प्रतिपक्षः",
+        "tags": [
+            "सत्प्रतिपक्षः",
+            "हेतुः",
+            "शब्दः",
+            "नित्यः",
+            "श्रावणत्वम्",
+            "कार्यत्वम्"
+        ],
+        "content": "यस्य साध्याभावसाधकं हेत्वन्तरं विद्यते स सत्प्रतिपक्षः । यथा शब्दो नित्यः श्रावणत्वाच्छब्दत्ववत् । शब्दोऽनित्यः कार्यत्वाद्घटवत् ।",
+        "translation": "Satpratipakṣa (counterbalanced) is when there is another reason that proves the absence of the predicate. For example, \"Sound is eternal because it is audible, like sound itself.\" \"Sound is non-eternal because it is produced, like a pot.\"",
+        "sectionId": 57
+    },
+    {
+        "title": "असिद्धः",
+        "tags": [
+            "असिद्धः",
+            "आश्रयासिद्धः",
+            "स्वरूपासिद्धः",
+            "व्याप्यत्वासिद्धः"
+        ],
+        "content": "असिद्धस्त्रिविधः आश्रयासिद्धः स्वरूपासिद्धो व्याप्यत्वासिद्धश्चेति ।",
+        "translation": "Asiddha (unestablished) is of three kinds: Āśrayāsiddha (unestablished subject), Svarūpāsiddha (unestablished reason), and Vyāpyatvāsiddha (unestablished pervasion).",
+        "sectionId": 58
+    },
+    {
+        "title": "आश्रयासिद्धः",
+        "tags": [
+            "आश्रयासिद्धः",
+            "गगनारविन्दम्",
+            "सुरभि",
+            "अरविन्दत्वम्"
+        ],
+        "content": "आश्रयासिद्धो यथा गगनारविन्दं सुरभि अरविन्दत्वात्सरोजारविन्दवत् । अत्र गगनारविन्दमाश्रयः स च नास्त्येव ।",
+        "translation": "Āśrayāsiddha (unestablished subject) is when the subject does not exist. For example, \"The sky-lotus is fragrant because it is a lotus, like the water-lotus.\" Here, the sky-lotus (subject) does not exist.",
+        "sectionId": 59
+    },
+    {
+        "title": "स्वरूपासिद्धः",
+        "tags": [
+            "स्वरूपासिद्धः",
+            "शब्दः",
+            "गुणः",
+            "चाक्षुषत्वम्"
+        ],
+        "content": "स्वरूपासिद्धो यथा शब्दो गुणश्चाक्षुषत्वात् । अत्र चाक्षुषत्वं शब्दं नास्ति शब्दस्य श्रावणत्वात् ।",
+        "translation": "Svarūpāsiddha (unestablished reason) is when the reason does not exist in the subject. For example, \"Sound is a quality because it is visible.\" Here, visibility does not exist in sound, as sound is audible.",
+        "sectionId": 60
+    },
+    {
+        "title": "व्याप्यत्वासिद्धः",
+        "tags": [
+            "व्याप्यत्वासिद्धः",
+            "पर्वतः",
+            "धूमः",
+            "वह्निमत्वम्",
+            "उपाधिः"
+        ],
+        "content": "सोपाधिको हेतुः व्याप्यत्वासिद्धः । साध्यव्यापकत्वे सति साधनाव्यापकत्वमुपाधिः । साध्यसमानाधिकरणात्यन्ताभावाप्रतियोगित्वं साध्यव्यापकत्वम् । साधनवन्निष्ठात्यन्ताभावप्रतियोगित्वं साधनाव्यापकत्वम् । पर्वतो धूमवान्वह्निमत्वादित्यत्रार्द्रेन्धनसंयोग उपाधिः । तथाहि । यत्र धूमस्तत्रार्द्रेन्धनसंयोग इति साध्यव्यापकता । यत्र वह्निस्तत्रार्द्रेन्धनसंयोगो नास्त्ययोगोलके आर्द्रेन्धनसंयोगाभावादिति साधनाव्यापकता । एवं साध्यव्यापकत्वे अस्ति साधनाव्यापकत्वार्द्रेन्धनसंयोग उपाधिः । सोपाधिकत्वाद्वह्निमत्त्वं व्याप्यत्वासिद्धम् ।",
+        "translation": "Vyāpyatvāsiddha (unestablished pervasion) is when there is a conditional reason. For example, \"The mountain has smoke because it has fire.\" Here, the presence of wet fuel is the condition. \"Wherever there is smoke, there is wet fuel\" (conditional pervasion). \"Wherever there is fire, there is no wet fuel\" (non-pervasion of the reason).",
+        "sectionId": 61
+    },
+    {
+        "title": "बाधितः",
+        "tags": [
+            "बाधितः",
+            "वह्निः",
+            "अनुष्णः",
+            "जलम्",
+            "उष्णत्वम्"
+        ],
+        "content": "यस्य साध्याभावः प्रमाणान्तरेण निश्चितः स बाधितः । यथा वह्निरनुष्णो द्रavyत्वाज्जलवत् । अत्रानुष्णत्वं साध्यं तदभाव उष्णत्वं स्पर्शनप्रत्यक्षेण गुह्यते इति बाधितत्वम् ।",
+        "translation": "Bādhita (countermanded) is when the absence of the predicate is established by another means of knowledge. For example, \"Fire is cold because it is a substance, like water.\" Here, the absence of coldness (heat) is established by direct perception.",
+        "sectionId": 62
+    },
+    {
+        "title": "उपमानम्",
+        "tags": [
+            "उपमानम्",
+            "संज्ञासंज्ञिसम्बन्धज्ञानम्",
+            "सादृश्यज्ञानम्"
+        ],
+        "content": "उपमितिकरणमुपमानम् ।\nसंज्ञासंज्ञिसम्बन्धज्ञानमुपमितिः ।\nतत्करणं सादृश्यज्ञानम् ।",
+        "translation": "The cause of Upamiti (comparison) is Upamana (analogy). Upamiti is the knowledge of the relationship between a name and the object it signifies. The cause of this is the knowledge of similarity.",
+        "sectionId": 63
+    },
+    {
+        "title": "अवान्तर व्यापारः",
+        "tags": [
+            "अतिदेशवाक्यार्थस्मरणम्",
+            "वनगमनम्"
+        ],
+        "content": "अतिदेशवाक्यार्थस्मरणमवान्तर व्यापारः ।",
+        "translation": "The auxiliary activity is the recollection of the meaning of the sentence (heard before).",
+        "sectionId": 64
+    },
+    {
+        "title": "उदाहरणम्",
+        "tags": [
+            "उदाहरणम्",
+            "गोसदृशः",
+            "गवयः"
+        ],
+        "content": "तथा हि\nकश्चिद्गवयशब्दार्थमजानन्कुतश्चिदारण्यकपुरुषाद्गोसदृशो\nगवय इति श्रुत्वा वन गतो वाक्यार्थं\nस्मरन्गोसदृशं पिण्डं पश्यति ।\nतदनन्तरमसौ गवयशब्दवाच्य\nइत्युपमितिरुत्पद्यते ॥ ४७॥",
+        "translation": "Thus, someone who does not know the meaning of the word \"Gavaya\" hears from a forest dweller that a Gavaya is similar to a cow. Then, upon going to the forest and remembering the meaning of the sentence, he sees an entity similar to a cow. Subsequently, he produces the Upamiti (comparison) that this entity is denoted by the word \"Gavaya\".",
+        "sectionId": 65
+    },
+    {
+        "title": "आप्तः",
+        "tags": [
+            "आप्तः",
+            "यथार्थवक्ता"
+        ],
+        "content": "आप्तस्तु यथार्थवक्ता ।",
+        "translation": "An Āpta is a truthful speaker.",
+        "sectionId": 66
+    },
+    {
+        "title": "वाक्यम्",
+        "tags": [
+            "वाक्यं",
+            "पदसमूहः"
+        ],
+        "content": "वाक्यं पदसमूहः ।",
+        "translation": "A sentence is a group of words.",
+        "sectionId": 67
+    },
+    {
+        "title": "शक्तं पदम्",
+        "tags": [
+            "पदम्",
+            "शक्ति",
+            "संकेतः"
+        ],
+        "content": "अस्मात्पदादयमर्थो बोद्धव्य इतीश्वरसंकेतः शक्तिः ॥",
+        "translation": "The meaning of this word should be understood by the convention of Īśvara; this is Śakti.",
+        "sectionId": 68
+    },
+    {
+        "title": "वाक्यार्थज्ञानहेतुः",
+        "tags": [
+            "वाक्यार्थज्ञानम्",
+            "आकाङ्क्षा",
+            "योग्यता",
+            "संनिधि"
+        ],
+        "content": "आकाङ्क्षा योग्यता संनिधिश्च वाक्यार्थज्ञानहेतुः पदस्य\nपदान्तरव्यतिरेकप्रयुक्तान्वयाननुभावकत्वमाकाङ्क्षा ।\nअर्थाबोधो योग्यता ।\nपदानामविलम्बेनोच्चारणं संनिधिः ॥",
+        "translation": "Expectancy, fitness, and proximity are the causes of the knowledge of sentence meaning. Expectancy is the experience of coherence in the absence of other words. Fitness is the understanding of meaning. Proximity is the uninterrupted utterance of words.",
+        "sectionId": 69
+    },
+    {
+        "title": "वाक्यमप्रमाणम्",
+        "tags": [
+            "वाक्यम्",
+            "प्रमाणम्",
+            "आकाङ्क्षा",
+            "योग्यता",
+            "संनिधि"
+        ],
+        "content": "आकाङ्क्षादिरहितं वाक्यमप्रमाणम् ।",
+        "translation": "A sentence lacking expectancy, fitness, or proximity is not a pramāṇam.",
+        "sectionId": 70
+    },
+    {
+        "title": "वाक्यद्विविधम्",
+        "tags": [
+            "वाक्यम्",
+            "वैदिकम्",
+            "लौकिकम्"
+        ],
+        "content": "वाक्यं द्विविधम् । वैदिकं लौकिकं च ।",
+        "translation": "Sentences are of two types: Vedic and worldly.",
+        "sectionId": 71
+    },
+    {
+        "title": "वैदिकम्",
+        "tags": [
+            "वैदिकम्",
+            "ईश्वरः",
+            "प्रमाणम्"
+        ],
+        "content": "वैदिकमीश्वरोक्तत्वात्सर्वमेव प्रमाणम् ।",
+        "translation": "The Vedic sentence is pramāṇam because it is spoken by Īśvara.",
+        "sectionId": 72
+    },
+    {
+        "title": "लौकिकम्",
+        "tags": [
+            "लौकिकम्",
+            "आप्तः",
+            "प्रमाणम्"
+        ],
+        "content": "लौकिकं त्वाप्तोक्तं प्रमाणम् । अन्यदप्रमाणम् ॥",
+        "translation": "The worldly sentence is pramāṇam if spoken by an Āpta; otherwise, it is not pramāṇam.",
+        "sectionId": 73
+    },
+    {
+        "title": "शब्दज्ञानम्",
+        "tags": [
+            "शब्दज्ञानम्",
+            "शब्दः"
+        ],
+        "content": "वाक्यार्थज्ञानं शब्दज्ञानम् । तत्करणं शब्दः ॥",
+        "translation": "The knowledge of the meaning of a sentence is the knowledge of words. The cause of this is the word.",
+        "sectionId": 74
+    },
+    {
+        "title": "अयथार्थानुभवः",
+        "tags": [
+            "अयथार्थानुभवः",
+            "संशयः",
+            "विपर्ययः",
+            "तर्कः"
+        ],
+        "content": "अयथार्थानुभवस्त्रिविधः संशयविपर्ययतर्कभेदात् ।",
+        "translation": "False experience is of three types: doubt, error, and reasoning.",
+        "sectionId": 75
+    },
+    {
+        "title": "संशयः",
+        "tags": [
+            "संशयः",
+            "विरुद्धधर्मः"
+        ],
+        "content": "एकस्मिन्धर्मिणि विरुद्धनानाधर्मवैशिष्ट्यावगाहि ज्ञानं संशयः ।",
+        "translation": "Doubt is the knowledge that apprehends various conflicting attributes in one entity.",
+        "sectionId": 76
+    },
+    {
+        "title": "विपर्ययः",
+        "tags": [
+            "विपर्ययः",
+            "मिथ्याज्ञानम्"
+        ],
+        "content": "मिथ्याज्ञानं विपर्ययः ।",
+        "translation": "Error is false knowledge.",
+        "sectionId": 77
+    },
+    {
+        "title": "तर्कः",
+        "tags": [
+            "तर्कः",
+            "व्याप्य",
+            "व्यापकः"
+        ],
+        "content": "व्याप्यारोपेण व्यापकारोपस्तर्कः ।",
+        "translation": "Reasoning is the imposition of the cause by the imposition of the effect.",
+        "sectionId": 78
+    },
+    {
+        "title": "स्मृतिः",
+        "tags": [
+            "स्मृतिः",
+            "यथार्था",
+            "अयथार्था"
+        ],
+        "content": "स्मृतिरपि द्विविधा । यथार्थायथार्था च ।",
+        "translation": "Memory is also of two types: true and false.",
+        "sectionId": 79
+    },
+    {
+        "title": "यथार्थस्मृतिः",
+        "tags": [
+            "स्मृतिः",
+            "यथार्था",
+            "प्रमाजन्या"
+        ],
+        "content": "प्रमाजन्या यथार्था ।",
+        "translation": "True memory arises from valid knowledge.",
+        "sectionId": 80
+    },
+    {
+        "title": "अयथार्थस्मृतिः",
+        "tags": [
+            "स्मृतिः",
+            "अयथार्था",
+            "अप्रमाजन्या"
+        ],
+        "content": "अप्रमाजन्याऽयथार्था ।",
+        "translation": "False memory arises from invalid knowledge.",
+        "sectionId": 81
+    },
+    {
+        "title": "सुखम्",
+        "tags": [
+            "सुखम्",
+            "वेदनीयम्",
+            "अनुकूलता"
+        ],
+        "content": "सर्वेषामनुकूलतया वेदनीयं सुखम् ॥",
+        "translation": "Pleasure is experienced by favorable conditions for all.",
+        "sectionId": 82
+    },
+    {
+        "title": "दुःखम्",
+        "tags": [
+            "दुःखम्",
+            "वेदनीयम्",
+            "प्रतिकूलता"
+        ],
+        "content": "सर्वेषां प्रतिकूलतया वेदनीयं दुःखम् ॥",
+        "translation": "Pain is experienced by unfavorable conditions for all.",
+        "sectionId": 83
+    },
+    {
+        "title": "इच्छा",
+        "tags": [
+            "इच्छा",
+            "कामः"
+        ],
+        "content": "इच्छा कामः ॥",
+        "translation": "Desire is kāma.",
+        "sectionId": 84
+    },
+    {
+        "title": "क्रोधः",
+        "tags": [
+            "क्रोधः",
+            "द्वेषः"
+        ],
+        "content": "क्रोधो द्वेषः ॥",
+        "translation": "Anger is dvesha.",
+        "sectionId": 85
+    },
+    {
+        "title": "कृतिः",
+        "tags": [
+            "कृतिः",
+            "प्रयत्नः"
+        ],
+        "content": "कृतिः प्रयत्नः ॥",
+        "translation": "Action is effort.",
+        "sectionId": 86
+    },
+    {
+        "title": "धर्मः",
+        "tags": [
+            "धर्मः",
+            "विहितकर्मजन्यः"
+        ],
+        "content": "विहितकर्मजन्यो धर्मः ॥",
+        "translation": "Dharma arises from prescribed actions.",
+        "sectionId": 87
+    },
+    {
+        "title": "अधर्मः",
+        "tags": [
+            "अधर्मः",
+            "निषिद्धकर्मजन्यः"
+        ],
+        "content": "निषिद्धकर्मजन्यस्त्वधर्मः ॥",
+        "translation": "Adharma arises from prohibited actions.",
+        "sectionId": 88
+    },
+    {
+        "title": "बुद्ध्यादयः",
+        "tags": [
+            "बुद्धिः",
+            "इच्छा",
+            "प्रयत्नः",
+            "आत्मगुणः"
+        ],
+        "content": "बुद्ध्यादयोऽष्टावात्ममात्रविशेषगुणाः ॥",
+        "translation": "Eight attributes like intellect, desire, and effort are unique qualities of the self.",
+        "sectionId": 89
+    },
+    {
+        "title": "बुद्धिः",
+        "tags": [
+            "बुद्धिः",
+            "नित्य",
+            "अनित्य"
+        ],
+        "content": "बुद्धीच्छा प्रयत्ना द्विविधाः । नित्या अनित्याश्च ।",
+        "translation": "Intellect, desire, and effort are of two types: eternal and non-eternal.",
+        "sectionId": 90
+    },
+    {
+        "title": "ईश्वरस्य बुद्धिः",
+        "tags": [
+            "बुद्धिः",
+            "नित्य",
+            "ईश्वरः"
+        ],
+        "content": "नित्या ईश्वरस्यानित्या जीवस्य ॥",
+        "translation": "Eternal for Īśvara, non-eternal for the individual soul.",
+        "sectionId": 91
+    },
+    {
+        "title": "संस्कारः",
+        "tags": [
+            "संस्कारः",
+            "वेगः",
+            "भावना",
+            "स्थितिस्थापकः"
+        ],
+        "content": "संस्कारस्त्रिविधः । वेगो भावना स्थितिस्थापकश्चेति ।",
+        "translation": "Impression is of three types: impulse, contemplation, and stabilizer.",
+        "sectionId": 92
+    },
+    {
+        "title": "वेगः",
+        "tags": [
+            "वेगः",
+            "पृथिवी",
+            "मनः"
+        ],
+        "content": "वेगः पृथिव्यादिचतुष्टयमनोवृत्तिः ।",
+        "translation": "Impulse is the activity of the earth, etc., and mind.",
+        "sectionId": 93
+    },
+    {
+        "title": "भावना",
+        "tags": [
+            "भावना",
+            "स्मृतिः",
+            "अनुभवजन्यः"
+        ],
+        "content": "अनुभवजन्या स्मृतिहेतुर्भावना ।",
+        "translation": "Contemplation is the cause of memory arising from experience.",
+        "sectionId": 94
+    },
+    {
+        "title": "स्थितिस्थापकः",
+        "tags": [
+            "स्थितिस्थापकः",
+            "पृथिवी"
+        ],
+        "content": "आत्ममात्रवृत्तिः । अन्यथाकृतस्य पुनस्तदवस्थापकः स्थितिस्थापकः कटादिपृथिवीवृत्तिः ॥",
+        "translation": "Stabilizer is the function of the earth, etc., restoring it to the previous state.",
+        "sectionId": 95
+    },
+    {
+        "title": "कर्म",
+        "tags": [
+            "कर्म",
+            "चलनात्मकम्"
+        ],
+        "content": "चलनात्मकं कर्म ।",
+        "translation": "Action is of the nature of motion.",
+        "sectionId": 96
+    },
+    {
+        "title": "उत्क्षेपणम्",
+        "tags": [
+            "कर्म",
+            "उत्क्षेपणम्",
+            "ऊर्ध्वदेशः"
+        ],
+        "content": "ऊर्ध्वदेशसंयोगहेतुरुत्क्षेपणम् ।",
+        "translation": "Throwing upward is the cause of conjunction with the upper region.",
+        "sectionId": 97
+    },
+    {
+        "title": "अपक्षेपणम्",
+        "tags": [
+            "कर्म",
+            "अपक्षेपणम्",
+            "अधोदेशः"
+        ],
+        "content": "अधोदेशसंयोगहेतुरपक्षेपणम् ।",
+        "translation": "Throwing downward is the cause of conjunction with the lower region.",
+        "sectionId": 98
+    },
+    {
+        "title": "आकुञ्चनम्",
+        "tags": [
+            "कर्म",
+            "आकुञ्चनम्",
+            "शरीरः"
+        ],
+        "content": "शरीरसंनिकृष्टसंयोगहेतुराकुञ्चनम् ।",
+        "translation": "Contraction is the cause of conjunction with the near region of the body.",
+        "sectionId": 99
+    },
+    {
+        "title": "प्रसारणम्",
+        "tags": [
+            "कर्म",
+            "प्रसारणम्",
+            "शरीरः"
+        ],
+        "content": "विप्रकृष्टसंयोगहेतुः प्रसारणम् ।",
+        "translation": "Extension is the cause of conjunction with the distant region of the body.",
+        "sectionId": 100
+    },
+    {
+        "title": "गमनम्",
+        "tags": [
+            "कर्म",
+            "गमनम्",
+            "पृथिवी",
+            "मनः"
+        ],
+        "content": "अन्यत्सर्वं गमनम् । पृथिव्यादिचतुष्टयमनोमात्रवृत्ति ॥",
+        "translation": "All other motion is movement. It is the function of the earth, etc., and mind.",
+        "sectionId": 101
+    },
+    {
+        "title": "सामान्यं",
+        "tags": [
+            "सामान्यं",
+            "नित्य",
+            "एकम्",
+            "अनेकानुगतम्"
+        ],
+        "content": "नित्यमेकमनेकानुगतं सामान्यं द्रव्यगुणकर्मवृत्ति ।",
+        "translation": "Universal is eternal, one, and pervades many. It is the function of substance, quality, and action.",
+        "sectionId": 102
+    },
+    {
+        "title": "सामान्यद्विविधम्",
+        "tags": [
+            "सामान्यं",
+            "परम्",
+            "अपरम्"
+        ],
+        "content": "तद्द्विविधं परापरभेदात् । परं सत्ता । अपरं द्रव्यत्वादिः ॥",
+        "translation": "Universal is of two types: higher and lower. Higher is existence. Lower is substantiality, etc.",
+        "sectionId": 103
+    },
+    {
+        "title": "विशेषः",
+        "tags": [
+            "विशेषः",
+            "नित्यद्रव्यवृत्तिः"
+        ],
+        "content": "नित्यद्रव्यवृत्तयो व्यावर्तका विशेषाः ॥",
+        "translation": "Specific attributes are the distinguishing factors of eternal substances.",
+        "sectionId": 104
+    },
+    {
+        "title": "समवायः",
+        "tags": [
+            "समवायः",
+            "नित्यसम्बन्धः",
+            "अयुतसिद्धः"
+        ],
+        "content": "नित्यसम्बन्धः समवायः । अयुतसिद्धवृत्तिः ।",
+        "translation": "Inseparable relationship is samavāya. It is the function of inseparable entities.",
+        "sectionId": 105
+    },
+    {
+        "title": "अयुतसिद्धः",
+        "tags": [
+            "अयुतसिद्धः",
+            "अवयव",
+            "अवयविन्",
+            "क्रिया",
+            "जाति",
+            "विशेषः",
+            "नित्यद्रव्ये"
+        ],
+        "content": "ययोर्द्वयोर्मध्ये एकमविनश्यदपराऽश्रितमेवावतिष्ठते तावयुतसिद्धौ यथा अवयवाऽवयविनौ क्रियाक्रियावन्तौ जातिव्यक्ती विशेषनित्यद्रव्ये चेति ॥",
+        "translation": "When between two entities, one remains dependent on the other without destruction, they are inseparable. For example, parts and whole, actions and their performers, genus and individuals, specific attributes in eternal substances, etc.",
+        "sectionId": 106
+    },
+    {
+        "title": "अभावः",
+        "tags": [
+            "अभावः",
+            "प्रागभावः",
+            "प्रध्वंसः",
+            "अत्यन्ताभावः",
+            "अन्योन्याभावः"
+        ],
+        "content": "अनादिः सान्तः प्रागभावः । उत्पत्तेः पूर्वं कार्यस्य । सादिरनन्तः प्रध्वंसः । उत्पत्यनन्तरं कार्यस्य । त्रैकालिकसंसर्गावच्छिन्नप्रतियोगिताकोऽत्यन्ताभावः । यथा भूतले घटो नास्तीति । तादात्म्यसम्बन्धावच्छिन्नप्रतियोगिताकोऽन्योन्याभावः । यथा घटः पटो नेति ॥",
+        "translation": "Non-existence is of four types: prior non-existence, destruction, absolute non-existence, and mutual non-existence. Prior non-existence is before the production of an effect. Destruction is after the production of an effect. Absolute non-existence is the absence of an entity in all three periods of time. Mutual non-existence is the absence of identity between two entities.",
+        "sectionId": 107
+    },
+    {
+        "title": "सप्त पदार्थाः",
+        "tags": [
+            "पदार्थाः",
+            "सप्त"
+        ],
+        "content": "सर्वेषामनुकूलतया वेदनीयं सुखम् ॥ ५५॥",
+        "translation": "There are seven categories based on the proper classification of all entities.",
+        "sectionId": 108
+    },
+    {
+        "title": "तर्कसंग्रहः",
+        "tags": [
+            "तर्कसंग्रहः",
+            "अन्नंभट्टः"
+        ],
+        "content": "कणादन्यायमतयोर्बालव्युत्पत्तिसिद्धये । अन्नंभट्टेन विदुषा रचितस्तर्कसंग्रहः ॥",
+        "translation": "Tarka Sangraha was composed by the scholar Annambhatta for the instruction of children in the doctrines of Kanada and Nyaya.",
+        "sectionId": 109
+    },
+    {
+        "title": "समाप्तिः",
+        "tags": [
+            "समाप्तिः",
+            "अन्नंभट्टः"
+        ],
+        "content": "इति श्रीमहामहोपाध्याय अन्नंभट्टविरचिततर्कसंग्रहः समाप्तः ॥",
+        "translation": "Thus ends the Tarka Sangraha composed by the great scholar Annambhatta.",
+        "sectionId": 110
+    }
+]
