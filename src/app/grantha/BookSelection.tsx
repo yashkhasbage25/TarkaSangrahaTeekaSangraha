@@ -1,5 +1,6 @@
 import React, { Component } from 'react';  
 import { BookDisplay, BookSelectionProps, BookSelectionState } from './interfaces';  
+import Link from 'next/link'; // Import Link for navigation
 import { FaBookReader } from 'react-icons/fa'; // Import the read icon  
 import clsx from 'clsx'; // Import clsx for conditional class names
 
@@ -38,6 +39,10 @@ export class BookSelection extends Component<BookSelectionProps, BookSelectionSt
   render() {  
     return (  
       <div className="p-4">  
+        {/* attractive banner that says 'Try TarkaSangraha Interactive' */}
+        <div className="bg-blue-100 p-2 rounded-lg mb-4">  
+          <Link className="text-lg italic text-blue-800 pl-4 underline" href="/interactive-tarkasangraha">Try TarkaSangraha Interactive!!</Link>  
+        </div>
         <h1 className="text-xl font-bold mb-4">Select Books to Read</h1>  
         <ul className="space-y-2">  
           {this.allBooks.map(book => (  

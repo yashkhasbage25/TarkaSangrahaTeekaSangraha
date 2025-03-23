@@ -100,7 +100,13 @@ class GranthaPage extends Component<GranthaPageProps, GranthaPageState> {
           this.tailwindSpinner()  
         ) : null}  
         { this.checkRenderContent() ? (  
-          <BooksLayout selectedBooks={this.state.selectedBooks} books={this.state.books} />  
+          <React.Fragment>
+            {/* reset button */}
+            <div className="flex justify-end mb-4">  
+              <button onClick={() => this.setState({ selectedBooks: [] })} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Reset Selection</button>
+            </div>
+            <BooksLayout selectedBooks={this.state.selectedBooks} books={this.state.books} />  
+          </React.Fragment>
         ) : null}  
       </div>  
     );  

@@ -32,8 +32,8 @@ const Navbar = () => {
         <Link href="/anveshanam" className="text-xl text-gray-800 hover:text-gray-600 ml-6">
           अन्वेषणम्
         </Link>
-        <Link href="/lakshanavibhagau" className="text-xl text-gray-800 hover:text-gray-600 ml-6">
-          लक्षणविभागौ
+        <Link href="/uddeshalakshanau" className="text-xl text-gray-800 hover:text-gray-600 ml-6">
+          उद्देशलक्षणौ
         </Link>
         <Link href="/vishayasangraha" className="text-xl text-gray-800 hover:text-gray-600 ml-6">
           विषयसङ्ग्रहः
