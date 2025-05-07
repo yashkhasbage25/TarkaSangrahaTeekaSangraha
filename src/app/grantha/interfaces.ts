@@ -36,3 +36,8 @@ export interface BooksLayoutProps {
     selectedBooks: string[];
     books: Book[];
 }
+
+export interface BooksLayoutState {
+    isPaneOpen: boolean;
+    isMobile: boolean;
+}

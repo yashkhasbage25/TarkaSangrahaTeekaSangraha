@@ -1,0 +1,20 @@
+export const NavigationPaths = {  
+  PADARTHA: 'Padartha',  
+  DRAVYA: 'Dravya',  
+  GUNA: 'Guna',  
+  KARMA: 'Karma',  
+  SAMANYA: 'Samanya',  
+  VISHESHA: 'Vishesha',  
+  SAMAVAYA: 'Samavaya',  
+  ABHAVA: 'Abhava',  
+  PRITHVI: 'Prithvi',  
+  AAP: 'Aap',  
+  TEJAH: 'Tejah',  
+  VAYU: 'Vayu',  
+  AKASHA: 'Akasha',  
+  DIK: 'Dik',  
+  KAALA: 'Kaala',  
+  AATMA: 'Aatma',  
+  MANAH: 'Manah',  
+} as const;  
+    
