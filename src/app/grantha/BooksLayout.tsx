@@ -9,10 +9,8 @@ const eczarBold = Eczar({ weight: "700", subsets: ["devanagari"] });
 const eczarLight = Eczar({ weight: "400", subsets: ["devanagari"] });  
   
 export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {  
-  private props: BooksLayoutProps;
   constructor(props: BooksLayoutProps) {  
     super(props);  
-    this.props = props;
     this.sectionRefs = {};  
     this.alignedSections = this.alignSections(props.books);  
     this.state = {  
