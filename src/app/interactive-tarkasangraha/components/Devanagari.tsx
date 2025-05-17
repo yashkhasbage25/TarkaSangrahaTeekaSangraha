@@ -43,7 +43,7 @@ export const Devanagari: DevanagariInterface = {
     bahu: 'अभावाः',  
   },  
   NavigationStackHeader: {
-    eka: 'Grantha',
+    eka: 'तर्कसङ्ग्रहः',
     bahu: 'Granthah'
   }
 };  

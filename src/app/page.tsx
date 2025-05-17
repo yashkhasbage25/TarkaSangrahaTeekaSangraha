@@ -1,18 +1,12 @@
 'use client';  
 import Image from "next/image";  
 import { Typography } from "@mui/material";  
-import { Gotu, Eczar } from "next/font/google";  
+import { Eczar } from "next/font/google";  
 import Stack from '@mui/material/Stack';  
   
-const gotu = Gotu({  
-  weight: "400",  
-  subsets: ["devanagari"],  
-  preload: true,  
-});  
 const eczar = Eczar({  
-  weight: "400",  
+  weight: ["400", "800"],  
   subsets: ["devanagari"],  
-  preload: true,  
 });  
   
 export default function Home() {  
@@ -32,7 +26,7 @@ export default function Home() {
         />  
         <Typography variant="h4" className={`text text-center ${eczar.className}`}>  
           प्रमाणविषयी वादः पदार्थस्थापकस्तर्कः। <br />  
-          स्फूर्यते भजनाद्यस्य नं गणेशं नमाम्यहम्॥ <br />  
+          स्फूर्यते भजनाद्यस्य तं गणेशं नमाम्यहम्॥ <br />  
         </Typography>  
       </Stack>  
       <footer className="w-full text-white py-8 px-4 mt-8">  
@@ -45,7 +39,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center">  
             <div className="mb-4 sm:mb-0 sm:mr-6">  
               <Typography variant="body1" className="text-center sm:text-left">  
-                Contact: yashkhasbage25@gmail.com
+                {/* Contact: yashkhasbage25@gmail.com */}
               </Typography>  
             </div>  
           </div>  

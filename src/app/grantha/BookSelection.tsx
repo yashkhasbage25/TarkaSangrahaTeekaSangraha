@@ -2,12 +2,11 @@
 import React, { Component } from 'react';  
 import Link from 'next/link';  
 import { FaBookReader } from 'react-icons/fa';  
-import { Quicksand, Gotu, Eczar } from 'next/font/google';
+import { Quicksand, Eczar } from 'next/font/google';
 import { Typography, Box, Button, Checkbox, FormControlLabel } from '@mui/material';  
 import { BookDisplay, BookSelectionProps, BookSelectionState } from './interfaces';  
   
 const quicksand = Quicksand({ subsets: ['latin'] });
-const gotu = Gotu({ weight: "400", subsets: ['devanagari'] });
 const eczar = Eczar({  
   weight: "400",  
   subsets: ["devanagari"],  
@@ -46,7 +45,7 @@ export class BookSelection extends Component<BookSelectionProps, BookSelectionSt
     return (  
       <Box className="w-full flex flex-col items-center space-y-6">  
         {/* Interactive Learning Box */}  
-        <Box className="w-full bg-transparent border rounded-xl border-gray-300 p-4 space-y-4">  
+        <Box className="w-full bg-transparent border rounded-md border-gray-300 p-4 space-y-4">  
           <Typography variant="h5" className={`font-bold ${quicksand.className}`}>
             Interactive Learning
             <br />
@@ -71,7 +70,7 @@ export class BookSelection extends Component<BookSelectionProps, BookSelectionSt
         </Box>  
   
         {/* Read Books Box */}  
-        <Box className="w-full bg-transparent border rounded-xl border-gray-300">  
+        <Box className="w-full bg-transparent border rounded-md border-gray-300">  
           <Box className="py-4 px-6">  
             <Typography variant="h5" className={`font-bold mb-4 ${quicksand.className}`}>  
               Select Books to Read  

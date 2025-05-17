@@ -4,7 +4,6 @@ import { Button, Typography, Modal } from '@mui/material';
 import { FaCircle, FaAtom, FaHands, FaCube } from 'react-icons/fa';  
 import FingerprintIcon from '@mui/icons-material/Fingerprint';  
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';  
-import { NavigationPaths } from './Navigations';  
 import { GenericComponentProps } from './interfaces';  
   
 const prithviElements = [  
@@ -16,7 +15,7 @@ const prithviElements = [
   { name: 'विषयो (मृत्पाषाणादिः)', icon: <FaCube style={{ fontSize: '48px', color: 'red' }} />, description: 'Objects (Clay, stone, etc.).', explanation: 'Various objects associated with Earth, such as clay, stones, and other materials.' },  
 ];  
   
-const Prithvi: React.FC<GenericComponentProps> = ({ onShapeClick }) => {  
+const Prithvi: React.FC<GenericComponentProps> = ({ }) => {  
   const [openModal, setOpenModal] = useState(false);  
   const [currentElement, setCurrentElement] = useState<any>(null);  
   

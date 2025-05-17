@@ -5,6 +5,7 @@ import "./globals.css";
   
 const martelFont = Martel({  
   weight: "400",  
+  subsets: ["devanagari", "latin"],
 });  
   
 export const metadata: Metadata = {  

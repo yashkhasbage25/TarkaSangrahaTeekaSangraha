@@ -8,7 +8,7 @@ import { GenericComponentProps } from './interfaces';
 class Samanya extends Component<GenericComponentProps> {      
   samanyas = [  
     { name: 'परम्', icon: <FaInfinity className="text-blue-500 text-6xl" />, navigateTo: NavigationPaths.PARAM },        
-    { name: 'अपरम्', icon: <FaAngleDoubleUp className="text-teal-500 text-6xl" />, navigateTo: NavigationPaths.PARAN },  
+    { name: 'अपरम्', icon: <FaAngleDoubleUp className="text-teal-500 text-6xl" />, navigateTo: NavigationPaths.APARAM },  
   ];      
   
   render() {  

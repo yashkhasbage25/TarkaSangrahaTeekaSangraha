@@ -1,15 +1,12 @@
 'use client';    
 import React, { Component } from 'react';    
 import { FaInfoCircle } from 'react-icons/fa';    
-import Button from '@mui/material/Button';    
 import { NavigationPaths } from './Navigations';    
 import { Devanagari } from './Devanagari';
 import { GenericComponentProps } from './interfaces';  
   
 class Vishesha extends Component<GenericComponentProps> {      
   render() {  
-    const { onShapeClick } = this.props;  
-  
     return (        
       <div className="relative flex flex-col justify-center items-center h-screen">          
         <h1 className="text-white text-4xl mb-12">{ Devanagari[NavigationPaths.VISHESHA].bahu }</h1>          

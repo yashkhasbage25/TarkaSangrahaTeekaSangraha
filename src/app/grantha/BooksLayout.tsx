@@ -1,21 +1,23 @@
 import React, { Component, createRef } from 'react';  
 import { BooksLayoutProps, BookSection, Book, BooksLayoutState } from './interfaces';  
 import { Box, Typography, Paper, IconButton } from '@mui/material';  
-import { Eczar, Quicksand } from 'next/font/google';  
+import { Eczar } from 'next/font/google';  
 import MenuIcon from '@mui/icons-material/Menu';  
 import CloseIcon from '@mui/icons-material/Close';  
   
-const eczar = Eczar({ weight: "400", subsets: ["devanagari"] });  
-const quicksand = Quicksand({ weight: "400", subsets: ['latin'] });  
+const eczarBold = Eczar({ weight: "700", subsets: ["devanagari"] });  
+const eczarLight = Eczar({ weight: "400", subsets: ["devanagari"] });  
   
 export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {  
+  private props: BooksLayoutProps;
   constructor(props: BooksLayoutProps) {  
     super(props);  
+    this.props = props;
     this.sectionRefs = {};  
     this.alignedSections = this.alignSections(props.books);  
     this.state = {  
       isPaneOpen: false,  
-      isMobile: window.innerWidth < 900,  
+      isMobile: window.innerWidth < 600,  
     };  
   }  
   
@@ -88,38 +90,38 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
     return (  
       <Box className="flex bg-transparent ">  
         {/* Main Content */}  
-        <Box className="flex-grow flex flex-col items-center justify-center text-lg text-gray-800 p-4">  
+        <Box className="flex-grow flex flex-col items-center justify-center text-gray-800 text-lg p-4">  
           <Box className="mb-6 text-center">  
             {selectedBooks.map(bookTitle => (  
-              <Typography key={bookTitle} variant="h4" className={`text-white font-bold ${eczar.className}`}>  
+              <Box key={bookTitle} className={`${eczarBold.className} text-white text-4xl p-2`}>  
                 ॥ {bookTitle} ॥  
-              </Typography>  
+              </Box>  
             ))}  
           </Box>  
           <Box className="space-y-6">  
             {this.alignedSections.map((section, index) => (  
-              <Paper key={index} elevation={3} className="p-6 rounded max-w-[600] shadow-md">  
+              <Paper key={index} variant="outlined" elevation={3} className="p-6 rounded max-w-[600]">  
                 <Box ref={this.sectionRefs[section.base.title]} className="flex flex-col items-center justify-center">  
-                  <Typography variant="h6" className={`text-xl font-semibold ${eczar.className}`}>  
+                  <Box className={`${eczarBold.className} text-2xl`}>  
                     {section.base.title}  
-                  </Typography>  
-                  <Typography variant="body1" className={`text-lg ${eczar.className} break-all hyphens-auto`}>  
+                  </Box>  
+                  <Box className={`${eczarLight.className} break-all hyphens-auto p-4`}>  
                     {section.base.content}  
-                  </Typography>  
+                  </Box>  
                   {/* {section.base.translation && (  
-                    <Typography variant="body2" className={`text-md italic ${quicksand.className}`}>  
+                    <Box variant="body2" className={`text-md italic ${quicksand.className}`}>  
                       {section.base.translation}  
-                    </Typography>  
+                    </Box>  
                   )}   */}
                 </Box>  
                 {section.commentaries.map(({ commentary, bookTitle }, comIndex) => (  
-                  <Box key={comIndex} ref={this.sectionRefs[`${bookTitle} - ${commentary.title}`]} className="mb-4 pl-4 border-l-2 border-gray-300">  
-                    <Typography className={`text-lg font-semibold ${eczar.className}`}>  
+                  <Box key={comIndex} ref={this.sectionRefs[`${bookTitle} - ${commentary.title}`]} className="mb-4 p-4 border-l-2 border-gray-300">  
+                    <Box className={`${eczarBold.className} mb-2`}>  
                       {bookTitle} - {commentary.title}  
-                    </Typography>  
-                    <Typography variant="body1" className={`text-md ${quicksand.className} break-all hyphens-auto`}>  
+                    </Box>  
+                    <Box className={`${eczarLight.className} break-all hyphens-auto`}>  
                       {commentary.content}  
-                    </Typography>  
+                    </Box>  
                   </Box>  
                 ))}  
               </Paper>  
