@@ -2,4 +2,4 @@
 runConfig:
   minInstances: 0
   maxInstances: 5 # Or any number 10 or less that you prefer
-  cpu: 0.5
+  cpu: 1
