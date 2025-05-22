@@ -93,7 +93,8 @@ class BookKeywordSearch extends React.Component<{}, BookKeywordSearchState> {
     await Promise.all(  
       selectedBooks.map(async (bookTitle) => {  
         try {  
-          const res = await fetch(`http://localhost:8000/${bookTitle}.json`);  
+          // const res = await fetch(`http://localhost:8000/${bookTitle}.json`);  
+          const res = await fetch(`https://raw.githubusercontent.com/yashkhasbage25/TarkaSangrahaTeekaSangraha/refs/heads/main/nyayarepo/json_data/${bookTitle}.json`);  
           if (!res.ok) throw new Error("Could not fetch");  
           const data: BookSection[] = await res.json();  
           data.forEach((section, idx) => {  
