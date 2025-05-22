@@ -9,16 +9,25 @@ import {
   Card,  
   CardContent,  
   Typography,  
-  Alert,  
+  Box,
+  Alert,
+  Tooltip,
+  IconButton,  
 } from "@mui/material";  
+import Link from "next/link";  
+import { OpenInNew } from "@mui/icons-material";
+import { Eczar } from "next/font/google";
+
+const eczar = Eczar({  
+  subsets: ["devanagari"],  
+  weight: ["400"],  
+});
   
-const BOOK_LIST = [  
-  "tarkasangraha",  
-  // "MobyDick",  
-  // "AliceInWonderland",  
-  // "OliverTwist"  
-];  
-  
+const BOOK_LIST = ["tarkasangraha"]
+const DEVANAGARI_MAP: Record<string, string> = {
+  "tarkasangraha": "तर्कसङ्ग्रहः",
+}
+
 interface BookSection {  
   content: string;  
   [key: string]: any;  
@@ -122,7 +131,7 @@ class BookKeywordSearch extends React.Component<{}, BookKeywordSearchState> {
   render() {  
     const { search, selectedBooks, results, loading, errors } = this.state;  
     const filteredBooks = BOOK_LIST;  
-  
+    
     return (  
       <div className="mx-auto max-w-3xl py-10 px-4 min-h-screen">  
         <div className="border-1 bg-white rounded-xl shadow p-8">  
@@ -165,7 +174,7 @@ class BookKeywordSearch extends React.Component<{}, BookKeywordSearchState> {
                   }  
                   label={  
                     <span>  
-                      {<span className="text-black">{title}</span>}  
+                      {<span className={`text-black ${eczar.className}`}>{DEVANAGARI_MAP[title]}</span>}  
                       {errors[title] && (  
                         <span className="ml-2 color-red-500 text-xs font-semibold">{errors[title]}</span>  
                       )}  
@@ -191,18 +200,40 @@ class BookKeywordSearch extends React.Component<{}, BookKeywordSearchState> {
                 className="mb-4"  
               >{`${results.length} matching section${results.length > 1 ? "s" : ""} found:`}</Alert>  
               <div className="space-y-5">  
-                {results.map((match, idx) => (  
-                  <Card key={`${match.bookTitle}-${match.sectionIdx}-${idx}`} className="bg-gray-500 border border-gray-200 shadow-sm rounded-lg">  
-                    <CardContent>  
-                      <Typography variant="subtitle2" className="text-indigo-700 font-bold mb-2">  
-                        {match.bookTitle} - {match.sectionTitle}
-                      </Typography>  
-                      <Typography variant="body1">  
-                        {highlightKeyword(match.content, search)}  
-                      </Typography>  
-                    </CardContent>  
-                  </Card>  
-                ))}  
+                {results.map((match, idx) => {  
+                  // Ensure safe URL encoding:  
+                  const devanagariTitle = DEVANAGARI_MAP[match.bookTitle];
+                  const bookParam = encodeURIComponent(devanagariTitle);  
+                  const sectionTitleParam = encodeURIComponent(match.sectionTitle);  
+                  const granthaHref = `/grantha?book=${bookParam}&sectiontitle=${sectionTitleParam}`;  
+                  return (  
+                    <Card key={`${match.bookTitle}-${match.sectionIdx}-${idx}`} className="bg-gray-500 border border-gray-200 shadow-sm rounded-lg">  
+                      <CardContent>  
+                        <Box className={`text-indigo-700 font-bold mb-2 ${eczar.className}`}>  
+                          {devanagariTitle} - {match.sectionTitle}  
+                        </Box>  
+                        <Box className={`text-gray-800 ${eczar.className}`}>  
+                          {highlightKeyword(match.content, search)}  
+                        </Box>  
+                        <div className="mt-3">  
+                          {/* You can use Link from Next.js or a plain <a> */}  
+                          <Tooltip title="Open this section in reading view">  
+                            <IconButton  
+                              component={Link}  
+                              href={granthaHref}  
+                              target="_blank"  
+                              rel="noopener noreferrer"  
+                              size="small"  
+                              color="primary"  
+                            >  
+                              <OpenInNew />  
+                            </IconButton>  
+                          </Tooltip>  
+                        </div>  
+                      </CardContent>  
+                    </Card>  
+                  );  
+                })}   
               </div>  
             </div>  
           )}  

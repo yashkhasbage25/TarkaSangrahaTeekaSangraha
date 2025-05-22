@@ -20,14 +20,15 @@ const Navbar = () => {
     <nav className={`bg-black p-4 flex flex-col sm:flex-row justify-between items-center border-b-1 ${martelFont.className} antialiased`}>  
       <div className="flex items-center justify-between w-full sm:w-auto">  
         <div className="flex items-center">  
-          <Image  
-            src="/smoky_mountain_2.png"  
-            alt="Logo"  
-            width={50}  
-            height={50}  
-            className="inline-block mr-2"  
-          />  
+           
           <Link href="/" className="text-xl ml-6 text-white hover:text-gray-600 ease-in-out duration-500">  
+            <Image  
+              src="/smoky_mountain_2.png"  
+              alt="Logo"  
+              width={50}  
+              height={50}  
+              className="inline-block mr-2"  
+            /> 
             तर्कसङ्ग्रहः  
           </Link>  
         </div>  

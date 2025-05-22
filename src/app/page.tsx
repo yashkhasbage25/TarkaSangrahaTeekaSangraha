@@ -18,7 +18,7 @@ export default function Home() {
   return (  
     <div className="flex flex-col grow items-center justify-center w-full">  
       <Stack spacing={8} className="flex flex-col items-center justify-center py-8 px-4 w-full sm:w-4/5 md:w-4/5 max-w-screen-lg">  
-        <Box className={`text-4xl text-center ${eczar.className}`}>  
+        <Box className={`text-4xl text-center ${eczar.className} break-all hyphens-auto`}>  
           ॥ नमः कणादगौतमवात्स्यायनादिभ्यो न्यायशास्त्रसम्प्रदायकर्तृभ्यो <br />  
           वंशर्षिभ्यः परमऋषिभ्यो महद्भ्यो मुनिभ्यो गुरुभ्यः॥  
         </Box>  
@@ -38,8 +38,8 @@ export default function Home() {
           Recent Updates:
           <ul className="list-disc list-inside">
             <li>The entire text of TarkaSangraha has been updated. To view this go, ग्रन्थाः -- Select Books to Read -- Select तर्कसङ्ग्रहः -- Click Read.</li>
-            <li>Search capability in TarkaSamgraha text. To try this go, अन्वेषणम् -- enter keyword -- select book as Tarkasangraha -- Click Search</li>
-            <li>Interactive TarkaSangraha is still work in progress. But you can always check intermediate development.</li>
+            <li>Search capability in TarkaSamgraha text. To try this go, अन्वेषणम् -- enter keyword -- select book as Tarkasangraha -- Click Search. You can also &quot;Open the section in new tab&quot;!</li>
+            <li>Interactive TarkaSangraha is still work in progress. But would encourage to check the intermediate development.</li>
           </ul>
         </Box>
 
