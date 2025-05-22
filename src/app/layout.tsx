@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {  
   return (  
-    <html lang="en">  
+    <html lang="hi">  
       <body className={`${martelFont.className} flex flex-col antialiased min-h-screen`}>  
         <Navbar />  
         <div className="flex-grow flex items-center justify-center px-4 md:px-8">  

@@ -86,7 +86,7 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
     const { isPaneOpen, isMobile } = this.state;  
   
     return (  
-      <Box className="flex bg-transparent ">  
+      <Box className="flex bg-transparent" sx={{ whiteSpace: 'pre-line' }}>  
         {/* Main Content */}  
         <Box className="flex-grow flex flex-col items-center justify-center text-gray-800 text-lg p-4">  
           <Box className="mb-6 text-center">  
@@ -99,11 +99,16 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
           <Box className="space-y-6">  
             {this.alignedSections.map((section, index) => (  
               <Paper key={index} variant="outlined" elevation={3} className="p-6 rounded max-w-[600]">  
+                {/* <Box className="text-left text-sm mb-4 text-gray-600">
+                  Section {section.base.sectionId}
+                </Box> */}
                 <Box ref={this.sectionRefs[section.base.title]} className="flex flex-col items-center justify-center">  
                   <Box className={`${eczarBold.className} text-2xl`}>  
                     {section.base.title}  
                   </Box>  
-                  <Box className={`${eczarLight.className} break-all hyphens-auto p-4`}>  
+                  <Box className={`${eczarLight.className} p-4`}
+                    style={{ wordBreak: 'break-word', hyphens: 'auto' }}  
+                  >  
                     {section.base.content}  
                   </Box>  
                   {/* {section.base.translation && (  
@@ -117,7 +122,7 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
                     <Box className={`${eczarBold.className} mb-2`}>  
                       {bookTitle} - {commentary.title}  
                     </Box>  
-                    <Box className={`${eczarLight.className} break-all hyphens-auto`}>  
+                    <Box className={`${eczarLight.className}`}>  
                       {commentary.content}  
                     </Box>  
                   </Box>  

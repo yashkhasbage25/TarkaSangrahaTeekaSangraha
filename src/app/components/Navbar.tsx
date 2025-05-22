@@ -27,7 +27,7 @@ const Navbar = () => {
             height={50}  
             className="inline-block mr-2"  
           />  
-          <Link href="/" className="text-xl ml-6 text-white hover:text-gray-600">  
+          <Link href="/" className="text-xl ml-6 text-white hover:text-gray-600 ease-in-out duration-500">  
             तर्कसङ्ग्रहः  
           </Link>  
         </div>  

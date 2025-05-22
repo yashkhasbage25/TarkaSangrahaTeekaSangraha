@@ -1,8 +1,21 @@
+'use client';
+import Image from "next/image";  
+import Link from "next/link";
+
 export default function AboutUs() {  
   return (  
     <div className="flex flex-col items-center justify-center min-h-screen p-4">  
-      <h1 className="text-3xl font-bold mb-4">About Us</h1>  
-      <p className="text-lg mb-8">We are a team of passionate developers.</p>  
-    </div>  
+      <Image  
+        src="/smoky_mountain_2.png"  
+        alt="Logo"  
+        width={300}  
+        height={300}  
+        className="mb-4"  
+      />  
+      <p className="text-lg max-w-2xl text-center">  
+        This website is under development. For any queries, please contact us at:
+        Email: <Link href="mailto:yashkhasbage25@gmail.com">yashkhasbage25@gmail.com</Link>
+      </p>  
+    </div>
   );  
-}
+}  
