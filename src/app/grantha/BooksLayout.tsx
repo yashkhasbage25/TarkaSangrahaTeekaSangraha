@@ -118,7 +118,7 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
       for (const section of this.alignedSections) {  
         // Base  
         let key = makeSectionKey(selectedBooks[0], section.base.title, section.base.sectionId);  
-        if (section.base.sectionId === deeplink.sectionid && this.sectionRefs[key]?.current) {
+        if (section.base.sectionId === deeplink.sectionid.toString() && this.sectionRefs[key]?.current) {
           if (this.sectionRefs[key]?.current) {
             console.log('Base section found (123):', key);
           } else {
@@ -130,7 +130,7 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
         // Commentaries  
         for (const { commentary, bookTitle } of section.commentaries) {  
           key = makeSectionKey(bookTitle, commentary.title, commentary.sectionId);  
-          if (commentary.sectionId === deeplink.sectionid && this.sectionRefs[key]?.current) {  
+          if (commentary.sectionId === deeplink.sectionid.toString() && this.sectionRefs[key]?.current) {  
             if (this.sectionRefs[key]?.current) {
               console.log('Base section found (135):', key);
             } else {
