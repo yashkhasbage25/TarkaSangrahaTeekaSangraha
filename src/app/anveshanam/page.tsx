@@ -11,7 +11,6 @@ import {
   Typography,  
   Alert,  
 } from "@mui/material";  
-import Link from "next/link";
   
 const BOOK_LIST = [  
   "tarkasangraha",  

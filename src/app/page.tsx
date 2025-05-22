@@ -1,6 +1,5 @@
 'use client';  
 import Image from "next/image";  
-import { Typography } from "@mui/material";  
 import Box from "@mui/material/Box";
 import { Eczar, Raleway } from "next/font/google";  
 import Stack from '@mui/material/Stack';  
