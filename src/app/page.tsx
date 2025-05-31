@@ -34,13 +34,14 @@ export default function Home() {
           स्फूर्यते भजनाद्यस्य तं गणेशं नमाम्यहम्॥ <br />  
         </Box>  
         {/* Create a box with transparent background saying 'Recent updates' */}
-        <Box className={`text-md text-left ${raleway.className} w-full bg-transparent border border-gray-300 rounded-lg p-4`}>  
+        <Box className={`text-md text-left ${raleway.className} w-full bg-transparent border border-gray-300 rounded-lg p-4`}> 
           Recent Updates:
           <ul className="list-disc list-inside">
             <li>The entire text of TarkaSangraha has been updated. To view this go, ग्रन्थाः -- Select Books to Read -- Select तर्कसङ्ग्रहः -- Click Read.</li>
             <li>Search capability in TarkaSamgraha text. To try this go, अन्वेषणम् -- enter keyword -- select book as Tarkasangraha -- Click Search. You can also &quot;Open the section in new tab&quot;!</li>
             <li>Interactive TarkaSangraha is still work in progress. But would encourage to check the intermediate development.</li>
           </ul>
+          <b>Website is under intial stages of development.</b> For feature requests, contribution of texts, or new ideas contact: yashkhasbage25@gmail.com <br /> 
         </Box>
 
       </Stack>  
@@ -54,7 +55,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center">  
             <div className="mb-4 sm:mb-0 sm:mr-6">  
               <Box className="text-center sm:text-left">  
-                {/* Contact: yashkhasbage25@gmail.com */}
+                Contact: yashkhasbage25@gmail.com
               </Box>  
             </div>  
           </div>  
