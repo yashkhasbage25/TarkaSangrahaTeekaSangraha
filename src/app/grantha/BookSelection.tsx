@@ -43,7 +43,7 @@ export class BookSelection extends Component<BookSelectionProps, BookSelectionSt
   
     render() {  
         return (  
-            <Box className="w-full flex flex-col items-center space-y-6">  
+            <Box className="flex flex-col items-center space-y-6">  
                 {/* Interactive Learning Box */}  
                 <Box className="w-full bg-transparent border rounded-md border-gray-300 p-4 space-y-4">  
                     <Typography variant="h5" className={`font-bold ${quicksand.className}`}>  
@@ -91,7 +91,7 @@ export class BookSelection extends Component<BookSelectionProps, BookSelectionSt
                                                 }}  
                                             />  
                                         }  
-                                        label={<Typography variant="h6" className={`${eczar.className}`}>{book.title}</Typography>}  
+                                        label={<div className={`${eczar.className} text-2xl`}>{book.title}</div>}  
                                     />  
                                 </Box>  
                             ))}  

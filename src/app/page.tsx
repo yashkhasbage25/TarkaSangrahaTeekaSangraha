@@ -3,6 +3,7 @@ import Image from "next/image";
 import Box from "@mui/material/Box";
 import { Eczar, Raleway } from "next/font/google";  
 import Stack from '@mui/material/Stack';  
+import Link from "next/link";
   
 const eczar = Eczar({  
   weight: "400",  
@@ -42,6 +43,7 @@ export default function Home() {
             <li>Interactive TarkaSangraha is still work in progress. But would encourage to check the intermediate development.</li>
           </ul>
           <b>Website is under intial stages of development.</b> For feature requests, contribution of texts, or new ideas contact: yashkhasbage25@gmail.com <br /> 
+          <Link href="/planned-features" className="text-blue-500 hover:underline">Planned Features</Link>
         </Box>
 
       </Stack>  
