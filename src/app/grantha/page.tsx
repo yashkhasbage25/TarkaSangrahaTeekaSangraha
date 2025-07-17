@@ -77,6 +77,10 @@ class GranthaPage extends Component<GranthaPageProps, GranthaPageState> {
           return 'nyayabodhini_mapping';  
         case 'तर्कसङ्ग्रहदीपिका':  
           return 'tarkasangrahadeepika_mapping';  
+        case 'तर्कसङ्ग्रहसर्वस्वम्':  
+          return 'tarkasangrahasarvasvam_with_section_mappings';
+        case 'आलोकः':
+          return 'aalok_with_section_mappings';
         default:  
           throw new Error('Book title not recognized');  
       }  
@@ -84,8 +88,8 @@ class GranthaPage extends Component<GranthaPageProps, GranthaPageState> {
   
     const books: Book[] = [];  
     for (const bookTitle of romanizedBookTitles) {  
-      const response = await fetch(`https://raw.githubusercontent.com/yashkhasbage25/TarkaSangrahaTeekaSangraha/refs/heads/main/nyayarepo/json_data/${bookTitle}.json`);  
-      // const response = await fetch(`http://localhost:8000/${bookTitle}.json`);
+      // const response = await fetch(`https://raw.githubusercontent.com/yashkhasbage25/TarkaSangrahaTeekaSangraha/refs/heads/main/nyayarepo/json_data/${bookTitle}.json`);  
+      const response = await fetch(`http://localhost:8000/${bookTitle}.json`);
       const data = await response.json();  
       books.push(data);  
     }  

@@ -22,6 +22,8 @@ export class BookSelection extends Component<BookSelectionProps, BookSelectionSt
             { title: 'तर्कसङ्ग्रहः', author: 'अन्नम्भट्ट', indent: 'ml-2' },  
             { title: 'न्यायबोधिनी', author: 'गोवर्धनसुधीः', indent: 'ml-6' },  
             { title: 'तर्कसङ्ग्रहदीपिका', author: 'अन्नम्भट्ट', indent: 'ml-6' },  
+            { title: 'तर्कसङ्ग्रहसर्वस्वम्', author: 'कुरुगण्टि श्रीरामशास्त्री', indent: 'ml-6' },
+            { title: 'आलोकः', author: 'म. म. श्री के. ऐस्. वरदाचार', indent: 'ml-6' },
         ];  
         this.state = {  
             selectedBooks: ['तर्कसङ्ग्रहः'],  

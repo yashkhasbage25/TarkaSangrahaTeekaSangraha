@@ -219,7 +219,7 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
                     <Box className={`${eczarBold.className} mb-2`}>  
                       {bookTitle} - {commentary.title}  
                     </Box>  
-                    <Box className={`${eczarLight.className}`}>  
+                    <Box className={`${eczarLight.className}`} style={{ wordBreak: 'break-word', hyphens: 'auto' }}>  
                       {commentary.content}  
                     </Box>  
                   </Box>  
@@ -268,7 +268,7 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
           </React.Fragment>  
         ) : (  
           <Box className="w-64 bg-gray-200 p-4">  
-            <Typography variant="h6" className="mb-4">Sections</Typography>  
+            {/* <Typography variant="h6" className="mb-4">Sections</Typography>   */}
             <Box component="ul" className="space-y-2">  
               {sectionItems.map((item, idx) => (  
                 <Box  
