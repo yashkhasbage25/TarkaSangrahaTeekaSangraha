@@ -17,15 +17,20 @@ import {
 import Link from "next/link";  
 import { OpenInNew } from "@mui/icons-material";
 import { Eczar } from "next/font/google";
+import { bookNameToUrl } from "../utils/book_urls";
 
 const eczar = Eczar({  
   subsets: ["devanagari"],  
   weight: ["400"],  
 });
   
-const BOOK_LIST = ["tarkasangraha"]
+const BOOK_LIST = ["tarkasangraha", "nyayabodhini", "tarkasangrahadeepika", "tarkasangrahasarvasvam", "aalok"];
 const DEVANAGARI_MAP: Record<string, string> = {
   "tarkasangraha": "तर्कसङ्ग्रहः",
+  "nyayabodhini": "न्यायबोधिनी",
+  "tarkasangrahadeepika": "तर्कसङ्ग्रहदीपिका",
+  "tarkasangrahasarvasvam": "तर्कसङ्ग्रहसर्वस्वम्",
+  "aalok": "आलोकः",
 }
 
 interface BookSection {  
@@ -101,8 +106,10 @@ class BookKeywordSearch extends React.Component<{}, BookKeywordSearchState> {
     await Promise.all(  
       selectedBooks.map(async (bookTitle) => {  
         try {  
+          const url = bookNameToUrl(bookTitle);
+          const res = await fetch(url);
           // const res = await fetch(`http://localhost:8000/${bookTitle}.json`);  
-          const res = await fetch(`https://raw.githubusercontent.com/yashkhasbage25/TarkaSangrahaTeekaSangraha/refs/heads/main/nyayarepo/json_data/${bookTitle}.json`);  
+          // const res = await fetch(`https://raw.githubusercontent.com/yashkhasbage25/TarkaSangrahaTeekaSangraha/refs/heads/main/nyayarepo/json_data/${bookTitle}.json`);  
           if (!res.ok) throw new Error("Could not fetch");  
           const data: BookSection[] = await res.json();  
           data.forEach((section, idx) => {  

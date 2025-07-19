@@ -6,6 +6,7 @@ import { GranthaPageProps, GranthaPageState, Book, DeeplinkParams } from './inte
 import { BooksLayout } from './BooksLayout';  
 import { CircularProgress, Button, Box } from '@mui/material';  
 import { FaUndo } from 'react-icons/fa';  
+import { bookNameToUrl } from '../utils/book_urls';
   
 // Helper for query parameter parsing  
 function parseQueryParams(): DeeplinkParams {  
@@ -69,31 +70,19 @@ class GranthaPage extends Component<GranthaPageProps, GranthaPageState> {
   };  
   
   handleSelectBook = async (bookTitles: string[]) => {  
-    const romanizedBookTitles = bookTitles.map((bookTitle) => {  
-      switch (bookTitle) {  
-        case 'तर्कसङ्ग्रहः':  
-          return 'tarkasangraha';  
-        case 'न्यायबोधिनी':  
-          return 'nyayabodhini_mapping';  
-        case 'तर्कसङ्ग्रहदीपिका':  
-          return 'tarkasangrahadeepika_mapping';  
-        case 'तर्कसङ्ग्रहसर्वस्वम्':  
-          return 'tarkasangrahasarvasvam_with_section_mappings';
-        case 'आलोकः':
-          return 'aalok_with_section_mappings';
-        default:  
-          throw new Error('Book title not recognized');  
-      }  
-    });  
+    // const romanizedBookTitles = bookTitles.map((bookTitle) => );  
   
     const books: Book[] = [];  
-    for (const bookTitle of romanizedBookTitles) {  
-      // const response = await fetch(`https://raw.githubusercontent.com/yashkhasbage25/TarkaSangrahaTeekaSangraha/refs/heads/main/nyayarepo/json_data/${bookTitle}.json`);  
-      const response = await fetch(`http://localhost:8000/${bookTitle}.json`);
-      const data = await response.json();  
-      books.push(data);  
-    }  
-  
+    for (const bookTitle of bookTitles) {
+      const url = bookNameToUrl(bookTitle);
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch book data for ${bookTitle}`);
+      }
+      const data: Book = await response.json();
+      books.push(data);
+    }
+
     this.setState({  
       loadingContent: false,  
       books: books,  
