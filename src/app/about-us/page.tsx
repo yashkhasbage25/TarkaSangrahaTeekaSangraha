@@ -36,8 +36,12 @@ export default function AboutUs() {
       </Typography>  
   
       <Typography className="mb-4" component="p">  
-        I hope you find this resource helpful. Your feedback and contributions are always welcome. <span className="italic">Namaste</span>.  
+        I hope you find this resource helpful. Your feedback and contributions are always welcome. Here is my email: <a href="mailto:yashkhasbage25@gmail.com" className="text-blue-600 hover:underline">yashkhasbage25@gmail.com</a>
       </Typography>  
+
+      <Typography className="mb-4" component="p">  
+        <span className="italic">Namaste</span>.  
+      </Typography>
     </Box>  
     <Divider />  
     <Box className="mt-6 flex flex-row items-center gap-2">  
