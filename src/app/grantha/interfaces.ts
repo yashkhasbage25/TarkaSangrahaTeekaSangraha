@@ -34,7 +34,6 @@ export interface BooksLayoutProps {
 }  
 export interface BooksLayoutState {  
     isPaneOpen: boolean;  
-    isMobile: boolean;  
 }  
   
 // New for query/deeplink parameters  

@@ -18,7 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="hi">  
       <body className={`${martelFont.className} flex flex-col antialiased min-h-screen`}>  
         <Navbar />  
-        <div className="flex-grow flex items-center justify-center px-4 md:px-8">  
+        <div className="flex-grow flex items-center justify-center px-4">  
           {children}  
         </div>  
       </body>  

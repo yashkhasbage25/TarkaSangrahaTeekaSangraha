@@ -4,13 +4,15 @@ import { Box, Typography, Divider, Chip } from "@mui/material";
 
 export default function AboutUs() {
   return (<React.Fragment>
-    <Typography variant="h4" className="font-bold text-blue-900 mb-4" gutterBottom>
-      Welcome to the Tarkasaṅgraha Website
-    </Typography>  
+    <Box className="mt-4 mb-6">
+      <Typography variant="h4" className="font-bold">
+        About Us
+      </Typography>  
+    </Box>
   
-    <Divider className="my-4" />  
+    <Divider style={{ borderColor: 'grey' }}/>  
   
-    <Box className="flex flex-col gap-y-4 mb-6">  
+    <Box className="flex flex-col max-w-3xl gap-y-4 mb-6 mt-6">  
       <Typography className="mb-4" component="p">  
         This website is dedicated to the venerable <strong>Guru Paramparā</strong> of the Naiyāyikas (scholars of Nyāya philosophy) and is open to contributions from all who wish to further this tradition.  
       </Typography>  
@@ -44,7 +46,7 @@ export default function AboutUs() {
       </Typography>
     </Box>  
     <Divider />  
-    <Box className="mt-6 flex flex-row items-center gap-2">  
+    <Box className="mt-6 flex flex-row flex-wrap items-center gap-2 mb-6">  
       <Chip label="#GuruParamparā" color="primary" />  
       <Chip label="#Naiyāyika" color="secondary" />  
       <Chip label="#Tarkasaṅgraha" color="info" />  

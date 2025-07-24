@@ -15,13 +15,17 @@ const Navbar = () => {
   const toggleMenu = () => {  
     setIsMenuOpen(!isMenuOpen);  
   };  
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
   
   return (  
     <nav className={`bg-black p-4 flex flex-col sm:flex-row justify-between items-center border-b-1 ${martelFont.className} antialiased`}>  
       <div className="flex items-center justify-between w-full sm:w-auto">  
         <div className="flex items-center">  
            
-          <Link href="/" className="text-xl ml-6 text-white hover:text-gray-600 ease-in-out duration-500">  
+          <Link href="/" className="text-xl ml-6 text-white hover:text-gray-600 ease-in-out duration-500" onClick={handleLinkClick}>  
             <Image  
               src="/smoky_mountain_2.png"  
               alt="Logo"  
@@ -45,22 +49,22 @@ const Navbar = () => {
         </button>  
       </div>  
       <div className={`flex-col sm:flex-row sm:flex ${isMenuOpen ? 'flex' : 'hidden'} sm:flex items-center sm:w-auto w-full`}>  
-        <Link href="/introduction-to-tarka" className="text-xl text-white hover:text-gray-600 ease-in-out duration-500 ml-6 mt-2 sm:mt-0">  
+        <Link href="/introduction-to-tarka" className="text-xl text-white hover:text-gray-600 ease-in-out duration-500 ml-6 mt-2 sm:mt-0" onClick={handleLinkClick}>  
           प्रारम्भिकम्  
         </Link>  
-        <Link href="/grantha" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0">  
+        <Link href="/grantha" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0" onClick={handleLinkClick}>  
           ग्रन्थाः  
         </Link>  
-        <Link href="/anveshanam" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0">  
+        <Link href="/anveshanam" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0" onClick={handleLinkClick}>  
           अन्वेषणम्  
         </Link>  
-        <Link href="/uddeshalakshanau" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0">  
+        {/* <Link href="/uddeshalakshanau" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0" onClick={handleLinkClick}>  
           उद्देशलक्षणौ  
         </Link>  
-        <Link href="/vishayasangraha" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0">  
+        <Link href="/vishayasangraha" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0" onClick={handleLinkClick}>  
           विषयसङ्ग्रहः  
-        </Link>  
-        <Link href="/about-us" className="text-xl text-white hover:text-gray-600 ml-6 mr-3 ease-in-out duration-500 mt-2 sm:mt-0">  
+        </Link>   */}
+        <Link href="/about-us" className="text-xl text-white hover:text-gray-600 ml-6 mr-3 ease-in-out duration-500 mt-2 sm:mt-0" onClick={handleLinkClick}>  
           परिचयः  
         </Link>  
       </div>  
@@ -68,4 +72,4 @@ const Navbar = () => {
   );  
 };  
   
-export default Navbar;  
+export default Navbar;
