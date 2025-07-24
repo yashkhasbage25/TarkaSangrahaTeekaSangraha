@@ -38,7 +38,8 @@ export default function Home() {
         <Box className={`text-md text-left ${raleway.className} w-full bg-transparent border border-gray-300 rounded-lg p-4`}> 
           Recent Updates:
           <ul className="list-disc list-inside">
-            <li>The entire text of TarkaSangraha has been updated. To view this go, ग्रन्थाः -- Select Books to Read -- Select तर्कसङ्ग्रहः -- Click Read.</li>
+            <li>The entire text of TarkaSangraha has been uploaded. To view this go, ग्रन्थाः -- Select Books to Read -- Select तर्कसङ्ग्रहः -- Click Read.</li>
+            <li>Similarly, Teekas of Nyayabodhini, TarkaSangrahaDeepika, TarkaSangrahaSarvasvam, and Aaloka have been uploaded</li>
             <li>Search capability in TarkaSamgraha text. To try this go, अन्वेषणम् -- enter keyword -- select book as Tarkasangraha -- Click Search. You can also &quot;Open the section in new tab&quot;!</li>
             <li>Interactive TarkaSangraha is still work in progress. But would encourage to check the intermediate development.</li>
           </ul>
