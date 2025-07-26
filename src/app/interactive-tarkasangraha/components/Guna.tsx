@@ -3,8 +3,38 @@ import React, { Component } from 'react';
 import { FaEye, FaAppleAlt, FaLeaf, FaHandSparkles, FaHashtag, FaRuler, FaUsers, FaLink, FaUnlink, FaArrowUp, FaArrowDown, FaWeight, FaTint, FaOilCan, FaVolumeUp, FaBrain, FaSmile, FaSadTear, FaHandHoldingHeart, FaHandPaper, FaPray, FaBalanceScale, FaGavel, FaInfinity } from 'react-icons/fa';    
 import { NavigationPaths } from './Navigations';    
 import { Devanagari } from './Devanagari';
-import { GenericComponentProps } from './interfaces';  
+import { GenericComponentProps, DataNode } from './interfaces';  
+import SunChart from './SunChart';
   
+export default class Guna extends Component<GenericComponentProps> {
+  private gunaVibhaga: DataNode = {
+    name: 'Guna',
+    children: [
+      { name: 'रूप', navigateTo: NavigationPaths.ROOPA },
+      { name: 'रस', navigateTo: NavigationPaths.RASA },
+      { name: 'गन्ध', navigateTo: NavigationPaths.GANDHA },
+      { name: 'स्पर्श', navigateTo: NavigationPaths.SPARSHA },
+      { name: 'संख्या', navigateTo: NavigationPaths.SANKHYA },
+      { name: 'परिमाण', navigateTo: NavigationPaths.PARIMAANA },
+      { name: 'पृथक्त्व', navigateTo: NavigationPaths.PRITHAKTVA },
+      { name: 'संयोग', navigateTo: NavigationPaths.SANYOGA },
+      { name: 'विभाग', navigateTo: NavigationPaths.VIBHAGA },
+      { name: 'परत्व', navigateTo: NavigationPaths.PARATVA },
+      { name: 'अपरत्व', navigateTo: NavigationPaths.APARATVA },
+    ],
+  }
+
+  render() {
+    return (
+      <SunChart 
+        data={this.gunaVibhaga}
+        onShapeClick={this.props.onShapeClick}
+      />
+    );
+  }
+}
+
+/*
 class Guna extends Component<GenericComponentProps> {      
   gunas = [  
     { name: 'रूप', icon: <FaEye className="text-blue-500 text-6xl" />, navigateTo: NavigationPaths.ROOPA },        
@@ -95,3 +125,4 @@ class Guna extends Component<GenericComponentProps> {
 }  
   
 export default Guna;  
+*/

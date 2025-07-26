@@ -13,6 +13,9 @@ import Prithvi from './components/Prithvi';
 import Unknown from './components/Unknown';
 import { NavigationPaths } from './components/Navigations';  
 import { Devanagari } from './components/Devanagari';
+import { Eczar, Martel } from "next/font/google";
+const eczarLight = Eczar({ weight: "400", subsets: ["devanagari"] });
+const martel = Martel({ weight: "400", subsets: ["devanagari"] });
 
 const componentMap = {  
   Padartha: Padartha,  
@@ -59,13 +62,13 @@ class MainCanvas extends Component {
   render() {  
     const { currentComponent, stack } = this.state;  
     // const stackTopTitle = Devanagari[currentComponent]?.eka || '???'; // Get the title from Devanagari object
-    const CurrentComponent = componentMap[currentComponent] || Unknown; // Get the component from the map  
-  
-    return (  
-      <Box display="flex" className="text-white">  
-        <Box flex={1} display="flex" justifyContent="center" alignItems="center" margin={2} borderRadius={2}>  
-          <CurrentComponent onShapeClick={this.handleShapeClick} />  
-        </Box>  
+    const CurrentComponent = componentMap[currentComponent] || Unknown; // Get the component from the map
+
+    return (
+      <Box display="flex" className={`${martel.className} text-white`}>
+        <Box flex={1} display="flex" justifyContent="center" alignItems="center" margin={2} borderRadius={2}>
+          <CurrentComponent onShapeClick={this.handleShapeClick} />
+        </Box>
         <Paper  
           elevation={3}  
           style={{  

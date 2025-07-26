@@ -3,8 +3,34 @@ import React, { Component } from 'react';
 import { FaGlobe, FaWater, FaBolt, FaWind, FaCircle, FaCompass, FaClock, FaHeart, FaBrain } from 'react-icons/fa';    
 import { NavigationPaths } from './Navigations';    
 import { Devanagari } from './Devanagari';    
-import { GenericComponentProps } from './interfaces';  
+import { GenericComponentProps, DataNode } from './interfaces';  
+import SunChart from './SunChart';
   
+export default class Dravya extends Component<GenericComponentProps> {
+  private dravyaVibhaga: DataNode = {
+    name: 'Dravya',
+    children: [
+      { name: 'पृथ्वी', navigateTo: NavigationPaths.PRITHVI },
+      { name: 'आपः', navigateTo: NavigationPaths.AAP },
+      { name: 'तेजः', navigateTo: NavigationPaths.TEJAH },
+      { name: 'वायु', navigateTo: NavigationPaths.VAYU },
+      { name: 'आकाश', navigateTo: NavigationPaths.AKASHA },
+      { name: 'दिक्', navigateTo: NavigationPaths.DIK },
+      { name: 'कालः', navigateTo: NavigationPaths.KAALA },
+      { name: 'आत्मा', navigateTo: NavigationPaths.AATMA },
+      { name: 'मनः', navigateTo: NavigationPaths.MANAH },
+    ],
+  }
+  render() {
+    return (
+      <SunChart 
+        data={this.dravyaVibhaga}
+        onShapeClick={this.props.onShapeClick}
+      />
+    );
+  }
+}
+/*
 class Dravya extends Component<GenericComponentProps> {      
   shapes = [  
     { name: 'पृथ्वी', icon: <FaGlobe className="text-blue-500 text-6xl" />, navigateTo: NavigationPaths.PRITHVI },        
@@ -68,3 +94,4 @@ class Dravya extends Component<GenericComponentProps> {
 }  
   
 export default Dravya;  
+*/

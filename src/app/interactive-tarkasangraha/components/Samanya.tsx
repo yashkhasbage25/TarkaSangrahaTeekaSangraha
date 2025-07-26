@@ -3,8 +3,29 @@ import React, { Component } from 'react';
 import { FaInfinity, FaAngleDoubleUp } from 'react-icons/fa';    
 import { NavigationPaths } from './Navigations';    
 import { Devanagari } from './Devanagari';
-import { GenericComponentProps } from './interfaces';  
+import { GenericComponentProps, DataNode } from './interfaces';  
+import SunChart from './SunChart';
   
+export default class Samanya extends Component<GenericComponentProps> {
+  private samanyaData: DataNode = {
+    name: 'Samanya',
+    children: [
+      { name: 'परम्', navigateTo: NavigationPaths.PARAM },
+      { name: 'अपरम्', navigateTo: NavigationPaths.APARAM },
+    ]
+  };
+
+  render() {
+    return (
+      <SunChart
+        data={this.samanyaData}
+        onShapeClick={this.props.onShapeClick}
+      />
+    );
+  }
+}
+
+/*
 class Samanya extends Component<GenericComponentProps> {      
   samanyas = [  
     { name: 'परम्', icon: <FaInfinity className="text-blue-500 text-6xl" />, navigateTo: NavigationPaths.PARAM },        
@@ -37,3 +58,4 @@ class Samanya extends Component<GenericComponentProps> {
 }  
   
 export default Samanya;  
+*/

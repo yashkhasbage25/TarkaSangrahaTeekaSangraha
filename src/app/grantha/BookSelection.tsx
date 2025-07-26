@@ -45,7 +45,7 @@ export class BookSelection extends Component<BookSelectionProps, BookSelectionSt
   
     render() {  
         return (  
-            <Box className="flex flex-col items-center space-y-6 my-4">  
+            <Box className="flex flex-col justify-start space-y-6 my-4 max-w-3xl mx-auto">  
                 {/* Interactive Learning Box */}  
                 <Box className="w-full bg-transparent border rounded-md border-gray-300 p-4 space-y-4">  
                     <Typography variant="h5" className={`font-bold ${quicksand.className}`}>  
@@ -114,4 +114,4 @@ export class BookSelection extends Component<BookSelectionProps, BookSelectionSt
             </Box>  
         );  
     }  
-}  
+}

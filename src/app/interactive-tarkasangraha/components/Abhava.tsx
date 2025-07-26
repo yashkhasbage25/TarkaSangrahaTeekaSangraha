@@ -2,8 +2,31 @@
 import React, { Component } from 'react';    
 import { FaBan, FaTrash, FaTimesCircle, FaExchangeAlt } from 'react-icons/fa';    
 import { NavigationPaths } from './Navigations';    
-import { GenericComponentProps } from './interfaces';  
-  
+import { GenericComponentProps, DataNode } from './interfaces';  
+import SunChart from './SunChart';  
+
+export default class Abhava extends Component<GenericComponentProps> {
+  private abhavaVibhaga: DataNode = {
+    name: 'Abhava',
+    children: [
+      { name: 'प्रागभावः', navigateTo: NavigationPaths.PRAGABHAVA },
+      { name: 'प्रध्वंसाभावः', navigateTo: NavigationPaths.PRADHVAMSABHAVA },
+      { name: 'अत्यन्ताभावः', navigateTo: NavigationPaths.ATYANTABHAVA },
+      { name: 'अन्योन्याभावः', navigateTo: NavigationPaths.ANYONYABHAVA },
+    ],
+  }
+
+  render() {
+    return (
+      <SunChart 
+        data={this.abhavaVibhaga}
+        onShapeClick={this.props.onShapeClick}
+      />
+    );
+  }
+}
+
+/*
 class Abhava extends Component<GenericComponentProps> {      
   abhavas = [  
     { name: 'प्रागभावः', icon: <FaBan className="text-blue-500 text-6xl" />, navigateTo: NavigationPaths.PRAGABHAVA },        
@@ -38,3 +61,4 @@ class Abhava extends Component<GenericComponentProps> {
 }  
   
 export default Abhava;  
+*/

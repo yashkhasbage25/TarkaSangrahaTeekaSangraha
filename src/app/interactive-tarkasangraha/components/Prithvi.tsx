@@ -1,11 +1,70 @@
-'use client';  
-import React, { useState } from 'react';  
-import { Button, Typography, Modal } from '@mui/material';  
-import { FaCircle, FaAtom, FaHands, FaCube } from 'react-icons/fa';  
-import FingerprintIcon from '@mui/icons-material/Fingerprint';  
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';  
-import { GenericComponentProps } from './interfaces';  
-  
+'use client';
+
+import React from 'react';
+import { FaCircle, FaAtom, FaHands, FaCube } from 'react-icons/fa';
+import FingerprintIcon from '@mui/icons-material/Fingerprint';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { GenericComponentProps, SectionedContentProps, RowDivisionProps } from './interfaces';
+import SectionedContent from './SectionedPage';
+import RowDivisions from './RowDivisions';
+import FindIcon from '@mui/icons-material/FindInPage';
+
+export default function Prithvi({ onShapeClick }: GenericComponentProps) {
+  const sections = [
+      {
+        title: 'लक्षणम्',
+        content: 'गन्धवती पृथिवी',
+        icon: <FindIcon />
+      },
+      {
+        title: 'two types of Prithvi',
+        content: <RowDivisions
+          sections={[
+            {
+              icon: <FaAtom style={{ fontSize: '48px', color: 'blue' }} />,
+              title: 'नित्याः (परमाणुरूपाः)',
+              content: 'Eternal (Atomic form).'
+            },
+            {
+              icon: <FaHands style={{ fontSize: '48px', color: 'teal' }} />,
+              title: 'अनित्याः (कार्यरूपाः)',
+              content: 'Non-eternal (Form resulting from actions).'
+            }
+          ]}
+        />
+      },
+      {
+        title: 'three types of Prithvi',
+        content: <RowDivisions
+          sections={[
+            {
+              icon: <AccountCircleIcon style={{ fontSize: '48px', color: 'orange' }} />,
+              title: 'शरीरमस्मदादीनाम्',
+              content: 'Body (Our bodies and others).'
+            },
+            {
+              icon: <FingerprintIcon style={{ fontSize: '48px', color: 'gray' }} />,
+              title: 'इन्द्रियं (घ्राणम्)',
+              content: 'Sense organ (Nose).'
+            },
+            {
+              icon: <FaCube style={{ fontSize: '48px', color: 'red' }} />,
+              title: 'विषयो (मृत्पाषाणादिः)',
+              content: 'Objects (Clay, stone, etc.).'
+            }
+          ]}
+        />
+      },
+    ];
+
+  return (
+    <SectionedContent
+      sections={sections}
+    />
+  )
+}
+
+/*
 const prithviElements = [  
   { name: 'गन्धवती पृथिवी', icon: <FaCircle style={{ fontSize: '48px', color: 'green' }} />, description: 'Earth with smell.', explanation: 'General representation of Earth, which possesses smell.' },  
   { name: 'नित्याः (परमाणुरूपाः)', icon: <FaAtom style={{ fontSize: '48px', color: 'blue' }} />, description: 'Eternal (Atomic form).', explanation: 'The eternal form of Earth is atomic, consisting of indivisible particles.' },  
@@ -86,3 +145,4 @@ const Prithvi: React.FC<GenericComponentProps> = ({ }) => {
 };  
   
 export default Prithvi;  
+*/
