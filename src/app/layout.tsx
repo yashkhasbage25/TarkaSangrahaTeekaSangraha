@@ -7,11 +7,19 @@ const martelFont = Martel({
   weight: "400",  
   subsets: ["devanagari", "latin"],
 });  
-  
-export const metadata: Metadata = {  
-  title: "Tarka Sangraha",  
-  description: "Tarka Sangraha - A collection of logical arguments",  
-};  
+
+export const metadata: Metadata = {
+  title: 'Tarka Sangraha',
+  description: `Unlock the profound world of Nyāya philosophy 
+with Tarkasaṅgraha Insights, your definitive online resource for 
+Annambhaṭṭa's Tarkasaṅgraha. Explore the core text and an 
+unparalleled collection of its vital commentaries like Dīpikā, 
+Nīlakaṇṭhī, and Dinakarī. Ideal for students, scholars, and 
+enthusiasts, our platform offers critical editions, comparative 
+viewing, and extensive resources to master Indian logic and 
+epistemology.`,
+}
+
   
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {  
   return (  
