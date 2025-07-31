@@ -1,14 +1,15 @@
 'use client';
 import Image from "next/image";
-import { Eczar } from "next/font/google";
+import { Eczar, Nanum_Myeongjo } from "next/font/google";
 import { Box, Typography, Divider, Chip } from "@mui/material";
 
 const eczarLight = Eczar({ weight: "400", subsets: ["devanagari"] });
+const nanumMyeongjo = Nanum_Myeongjo({ weight: "400", subsets: ["devanagari"] });
 
 export default function IntroductionToTarkaShastra() {
-  const divider = <Divider style={{ borderColor: 'white', width: '90%', margin: '16px 0' }} />;
+  const divider = <Divider style={{ borderColor: 'white', width: '90%', margin: '32px 0' }} />;
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 gap-y-2 max-w-3xl mx-auto">
+    <div className={`flex flex-col items-center justify-center min-h-screen p-8 gap-y-2 max-w-3xl mx-auto ${nanumMyeongjo.className}`}>
         <>
           <Typography variant="h4" className="mb-4 font-bold" gutterBottom>
             Nyāya, Vaiśeṣika, Tarka, and the Tarkasaṅgraha:<br className="md:hidden" /> Foundations, History, Relations, and Legacy
