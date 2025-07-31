@@ -1,5 +1,11 @@
 import React from 'react';
 import { RowDivisionProps } from './interfaces';
+import { Eczar } from 'next/font/google';
+
+const eczarLight = Eczar({
+    weight: ['500'],
+    subsets: ['latin'],
+});
 
 export default class RowDivisions extends React.Component<RowDivisionProps> {
     render() {
@@ -21,11 +27,11 @@ export default class RowDivisions extends React.Component<RowDivisionProps> {
                                     </div>
                                 )}
 
-                                <h2 className="text-xl font-semibold mb-3 text-center">
+                                <h2 className={`${eczarLight.className} text-xl font-semibold mb-3 text-center`}>
                                     {card.title}
                                 </h2>
 
-                                <p className="text-center leading-relaxed text-sm flex-grow">
+                                <p className={`${eczarLight.className} text-center leading-relaxed text-sm flex-grow`}>
                                     {card.content}
                                 </p>
                             </div>

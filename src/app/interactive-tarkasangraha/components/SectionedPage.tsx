@@ -10,7 +10,16 @@ import {
   Avatar 
 } from '@mui/material';
 import { SectionedContentProps } from './interfaces';
+import { Nanum_Myeongjo, Eczar } from 'next/font/google';
 
+const nanumMyeongjo = Nanum_Myeongjo({
+  weight: ['400'],
+  subsets: ['latin'],
+});
+const eczarLight = Eczar({
+  weight: ['400'],
+  subsets: ['latin'],
+});
 class SectionedContent extends Component<SectionedContentProps> {
   render() {
     return (
@@ -35,22 +44,22 @@ class SectionedContent extends Component<SectionedContentProps> {
                     sx={{ 
                       width: 48, 
                       height: 48,
-                      mr: 2 
+                      mr: 2, 
+                      backgroundColor: 'white'
                     }}
                   >
                     {section.icon}
                   </Avatar>
                   <Typography 
-                    variant="h5" 
-                    component="h2" 
-                    className="font-semibold text-white"
+                    variant="h4" 
+                    className={`text-lg font-semibold text-white ${eczarLight.className}`}
                   >
                     {section.title}
                   </Typography>
                 </Box>
                 <Typography 
-                  variant="body1" 
-                  className="text-white leading-relaxed"
+                  variant="h6" 
+                  className={`text-white px-16 ${eczarLight.className}`}
                 >
                   {section.content}
                 </Typography>

@@ -10,43 +10,81 @@ import { DataNode, SectionedContentProps } from './interfaces';
 export default class Padartha extends React.Component<GenericComponentProps> {
 
   private padarthaData: DataNode = {
-    name: 'Padartha',
+    name: Devanagari[NavigationPaths.PADARTHA].eka,
     children: [
       {
-        name: 'Dravya',
+        name: Devanagari[NavigationPaths.DRAVYA].eka,
         children: [
-          { name: 'Prithvi' }, { name: 'Āp' }, { name: 'Teja' },
-          { name: 'Vāyu' }, { name: 'Ākāśa' }, { name: 'Manas' },
-          { name: 'Ātman' }, { name: 'Kāla' }, { name: 'Dik' },
+          { name: Devanagari[NavigationPaths.PRITHVI].eka },
+          { name: Devanagari[NavigationPaths.AAP].eka },
+          { name: Devanagari[NavigationPaths.TEJAH].eka },
+          { name: Devanagari[NavigationPaths.VAYU].eka },
+          { name: Devanagari[NavigationPaths.AKASHA].eka },
+          { name: Devanagari[NavigationPaths.KAALA].eka },
+          { name: Devanagari[NavigationPaths.AATMA].eka },
+          { name: Devanagari[NavigationPaths.DIK].eka },
+          { name: Devanagari[NavigationPaths.MANAH].eka },
         ],
         navigateTo: NavigationPaths.DRAVYA
       },
       {
-        name: 'Guṇa',
+        name: Devanagari[NavigationPaths.GUNA].eka,
         children: [
-          { name: 'Rūpa' }, { name: 'Rasa' }, { name: 'Gandha' },
-          { name: 'Sparśa' }, { name: 'Saṃkhyā' }, { name: 'Parimāṇa' },
-          { name: 'Saṃghāta' }, { name: 'Vibhāga' }, { name: 'Pruthaktva' },
+          { name: Devanagari[NavigationPaths.ROOPA].eka },
+          { name: Devanagari[NavigationPaths.RASA].eka },
+          { name: Devanagari[NavigationPaths.GANDHA].eka },
+          { name: Devanagari[NavigationPaths.SPARSHA].eka },
+          { name: Devanagari[NavigationPaths.SANKHYA].eka },
+          { name: Devanagari[NavigationPaths.PARIMAANA].eka },
+          { name: Devanagari[NavigationPaths.PRITHAKTVA].eka },
+          { name: Devanagari[NavigationPaths.SANYOGA].eka },
+          { name: Devanagari[NavigationPaths.VIBHAGA].eka },
+          { name: Devanagari[NavigationPaths.PARATVA].eka },
+          { name: Devanagari[NavigationPaths.APARATVA].eka },
+          { name: Devanagari[NavigationPaths.GURUTVA].eka },
+          { name: Devanagari[NavigationPaths.DRAVATVA].eka },
+          { name: Devanagari[NavigationPaths.SNEHA].eka },
+          { name: Devanagari[NavigationPaths.SHABDA].eka },
+          { name: Devanagari[NavigationPaths.BUDDHI].eka },
+          { name: Devanagari[NavigationPaths.SUKHA].eka },
+          { name: Devanagari[NavigationPaths.DUKHA].eka },
+          { name: Devanagari[NavigationPaths.ICCHA].eka },
+          { name: Devanagari[NavigationPaths.DVESHA].eka },
+          { name: Devanagari[NavigationPaths.PRAYATNA].eka },
+          { name: Devanagari[NavigationPaths.DHARMA].eka },
+          { name: Devanagari[NavigationPaths.ADHARMA].eka },
+          { name: Devanagari[NavigationPaths.SAMSKARA].eka },
         ],
         navigateTo: NavigationPaths.GUNA
       },
       {
-        name: 'Karma',
+        name: Devanagari[NavigationPaths.KARMA].eka,
         children: [
-          { name: 'Udgama' }, { name: 'Asechana' },
-          { name: 'Akun̄chana' }, { name: 'Prasarana' }, { name: 'Gamana' },
+          { name: Devanagari[NavigationPaths.UTKSHEPANA].eka },
+          { name: Devanagari[NavigationPaths.APAKSHEPANA].eka },
+          { name: Devanagari[NavigationPaths.AKUNCHANA].eka },
+          { name: Devanagari[NavigationPaths.PRASARANA].eka },
+          { name: Devanagari[NavigationPaths.GAMANA].eka },
         ],
         navigateTo: NavigationPaths.KARMA
       },
-      { name: 'Samanya' },
-      { name: 'Viśeṣa' },
-      { name: 'Samavāya' },
       {
-        name: 'Abhāva',
+        name: Devanagari[NavigationPaths.SAMANYA].eka,
         children: [
-          { name: 'Prāgabhāva' }, { name: 'Pradhvaṃsabhāva' },
-          { name: 'Atyantabhāva' }, { name: 'Anyonyabhāva' },
-          { name: 'Anyabhāva' },
+          { name: Devanagari[NavigationPaths.PARAM].eka },
+          { name: Devanagari[NavigationPaths.APARAM].eka },
+        ],
+        navigateTo: NavigationPaths.SAMANYA
+      },
+      { name: Devanagari[NavigationPaths.VISHESHA].eka },
+      { name: Devanagari[NavigationPaths.SAMAVAYA].eka },
+      {
+        name: Devanagari[NavigationPaths.ABHAVA].eka,
+        children: [
+          { name: Devanagari[NavigationPaths.PRAGABHAVA].eka },
+          { name: Devanagari[NavigationPaths.PRADHVAMSABHAVA].eka },
+          { name: Devanagari[NavigationPaths.ATYANTABHAVA].eka },
+          { name: Devanagari[NavigationPaths.ANYONYABHAVA].eka },
         ]
       }
     ]

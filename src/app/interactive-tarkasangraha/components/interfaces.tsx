@@ -26,7 +26,7 @@ export interface SectionedContentProps {
 
 export interface RowDivisionProps {
     sections: {
-        icon: React.ReactNode;
+        icon?: React.ReactNode;
         title: string;
         content: string;
     }[]

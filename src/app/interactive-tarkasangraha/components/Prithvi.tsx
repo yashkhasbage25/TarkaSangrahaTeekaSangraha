@@ -1,32 +1,34 @@
 'use client';
 
 import React from 'react';
-import { FaCircle, FaAtom, FaHands, FaCube } from 'react-icons/fa';
-import FingerprintIcon from '@mui/icons-material/Fingerprint';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+// import { FaCircle, FaAtom, FaHands, FaCube } from 'react-icons/fa';
+import EmojiPeople from '@mui/icons-material/EmojiPeople';
+import Hearing from '@mui/icons-material/Hearing';
+import Terrain from '@mui/icons-material/Terrain';
 import { GenericComponentProps, SectionedContentProps, RowDivisionProps } from './interfaces';
 import SectionedContent from './SectionedPage';
 import RowDivisions from './RowDivisions';
-import FindIcon from '@mui/icons-material/FindInPage';
+import Sort from '@mui/icons-material/Sort';
 
 export default function Prithvi({ onShapeClick }: GenericComponentProps) {
   const sections = [
       {
         title: 'लक्षणम्',
         content: 'गन्धवती पृथिवी',
-        icon: <FindIcon />
+        icon: <Sort color="primary"/>
       },
       {
-        title: 'two types of Prithvi',
+        icon: <Sort color="primary"/>,
+        title: 'Two types of Prithvi',
         content: <RowDivisions
           sections={[
             {
-              icon: <FaAtom style={{ fontSize: '48px', color: 'blue' }} />,
+              // icon: <FaAtom style={{ fontSize: '48px', color: 'black' }} />,
               title: 'नित्याः (परमाणुरूपाः)',
               content: 'Eternal (Atomic form).'
             },
             {
-              icon: <FaHands style={{ fontSize: '48px', color: 'teal' }} />,
+              // icon: <FaHands style={{ fontSize: '48px', color: 'teal' }} />,
               title: 'अनित्याः (कार्यरूपाः)',
               content: 'Non-eternal (Form resulting from actions).'
             }
@@ -34,21 +36,25 @@ export default function Prithvi({ onShapeClick }: GenericComponentProps) {
         />
       },
       {
-        title: 'three types of Prithvi',
+        title: 'Three types of Prithvi',
+        icons: <Sort color="primary"/>,
         content: <RowDivisions
           sections={[
             {
-              icon: <AccountCircleIcon style={{ fontSize: '48px', color: 'orange' }} />,
+              // icon: <AccountCircleIcon style={{ fontSize: '48px', color: 'orange' }} />,
+              icon: <EmojiPeople style={{ fontSize: '48px', color: 'orange' }} />,
               title: 'शरीरमस्मदादीनाम्',
               content: 'Body (Our bodies and others).'
             },
             {
-              icon: <FingerprintIcon style={{ fontSize: '48px', color: 'gray' }} />,
+              // icon: <FingerprintIcon style={{ fontSize: '48px', color: 'gray' }} />,
+              icon: <Hearing style={{ fontSize: '48px', color: 'gray' }} />,
               title: 'इन्द्रियं (घ्राणम्)',
               content: 'Sense organ (Nose).'
             },
             {
-              icon: <FaCube style={{ fontSize: '48px', color: 'red' }} />,
+              // icon: <FaCube style={{ fontSize: '48px', color: 'red' }} />,
+              icon: <Terrain style={{ fontSize: '48px', color: 'green' }} />,
               title: 'विषयो (मृत्पाषाणादिः)',
               content: 'Objects (Clay, stone, etc.).'
             }

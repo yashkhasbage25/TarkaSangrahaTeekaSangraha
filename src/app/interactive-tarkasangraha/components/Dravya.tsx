@@ -1,6 +1,5 @@
 'use client';    
 import React, { Component } from 'react';    
-import { FaGlobe, FaWater, FaBolt, FaWind, FaCircle, FaCompass, FaClock, FaHeart, FaBrain } from 'react-icons/fa';    
 import { NavigationPaths } from './Navigations';    
 import { Devanagari } from './Devanagari';    
 import { GenericComponentProps, DataNode } from './interfaces';  
@@ -8,17 +7,17 @@ import SunChart from './SunChart';
   
 export default class Dravya extends Component<GenericComponentProps> {
   private dravyaVibhaga: DataNode = {
-    name: 'Dravya',
+    name: Devanagari[NavigationPaths.DRAVYA].eka,
     children: [
-      { name: 'पृथ्वी', navigateTo: NavigationPaths.PRITHVI },
-      { name: 'आपः', navigateTo: NavigationPaths.AAP },
-      { name: 'तेजः', navigateTo: NavigationPaths.TEJAH },
-      { name: 'वायु', navigateTo: NavigationPaths.VAYU },
-      { name: 'आकाश', navigateTo: NavigationPaths.AKASHA },
-      { name: 'दिक्', navigateTo: NavigationPaths.DIK },
-      { name: 'कालः', navigateTo: NavigationPaths.KAALA },
-      { name: 'आत्मा', navigateTo: NavigationPaths.AATMA },
-      { name: 'मनः', navigateTo: NavigationPaths.MANAH },
+      { name: Devanagari[NavigationPaths.PRITHVI].eka, navigateTo: NavigationPaths.PRITHVI },
+      { name: Devanagari[NavigationPaths.AAP].eka, navigateTo: NavigationPaths.AAP },
+      { name: Devanagari[NavigationPaths.TEJAH].eka, navigateTo: NavigationPaths.TEJAH },
+      { name: Devanagari[NavigationPaths.VAYU].eka, navigateTo: NavigationPaths.VAYU },
+      { name: Devanagari[NavigationPaths.AKASHA].eka, navigateTo: NavigationPaths.AKASHA },
+      { name: Devanagari[NavigationPaths.DIK].eka, navigateTo: NavigationPaths.DIK },
+      { name: Devanagari[NavigationPaths.KAALA].eka, navigateTo: NavigationPaths.KAALA },
+      { name: Devanagari[NavigationPaths.AATMA].eka, navigateTo: NavigationPaths.AATMA },
+      { name: Devanagari[NavigationPaths.MANAH].eka, navigateTo: NavigationPaths.MANAH },
     ],
   }
   render() {

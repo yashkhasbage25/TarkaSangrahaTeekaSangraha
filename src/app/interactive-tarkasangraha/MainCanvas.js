@@ -1,6 +1,6 @@
 'use client';
 import React, { Component } from 'react';  
-import { Box, Button, Typography, Paper, List, ListItem, ListItemText } from '@mui/material';  
+import { Box, Button, Typography, Paper, List, ListItem, ListItemText, Stack } from '@mui/material';  
 import Padartha from './components/Padartha';  
 import Dravya from './components/Dravya';  
 import Guna from './components/Guna';  
@@ -13,9 +13,10 @@ import Prithvi from './components/Prithvi';
 import Unknown from './components/Unknown';
 import { NavigationPaths } from './components/Navigations';  
 import { Devanagari } from './components/Devanagari';
-import { Eczar, Martel } from "next/font/google";
+import { Eczar, Martel, Nanum_Myeongjo } from "next/font/google";
 const eczarLight = Eczar({ weight: "400", subsets: ["devanagari"] });
 const martel = Martel({ weight: "400", subsets: ["devanagari"] });
+const nanumMyeongjo = Nanum_Myeongjo({ weight: "400", subsets: ["devanagari"] });
 
 const componentMap = {  
   Padartha: Padartha,  
@@ -65,12 +66,12 @@ class MainCanvas extends Component {
     const CurrentComponent = componentMap[currentComponent] || Unknown; // Get the component from the map
 
     return (
-      <Box display="flex" className={`${martel.className} text-white`}>
+      <Box display="flex" className={`${nanumMyeongjo.className} text-white`}>
         <Box flex={1} display="flex" justifyContent="center" alignItems="center" margin={2} borderRadius={2}>
           <CurrentComponent onShapeClick={this.handleShapeClick} />
         </Box>
         <Paper  
-          elevation={3}  
+          elevation={3}
           style={{  
             position: 'fixed',  
             right: 0,  
@@ -86,19 +87,26 @@ class MainCanvas extends Component {
             overflowY: 'auto', // Optional: to add a scrollbar if content overflows  
           }}  
         >  
-          <Typography variant="h5" align="center" gutterBottom>  
+          <Typography className={eczarLight.className} variant="h5" align="center" gutterBottom>  
             { Devanagari.NavigationStackHeader.eka } 
           </Typography>  
-          <List>  
-            {stack.map((component, index) => (  
-              <ListItem key={index}>  
-                <ListItemText primary={
-                  Devanagari[component]?.eka || '???' // Get the title from Devanagari object  
-                } />  
-              </ListItem>  
-            ))}  
-          </List>  
-          <Button variant="outlined" color="primary" fullWidth onClick={this.handleGoBack} style={{ marginTop: '1rem', color: 'white', borderColor: 'white' }}>  
+
+          <Stack spacing={1} className={`${martel.className}`}>
+            {stack.map((component, index) => (
+              <Button  
+                key={index}
+                className={`${martel.className}`}
+                // variant="outlined"
+                color="primary"
+                disabled
+                fullWidth
+                style={{ color: 'white', fontSize: '1.2rem' }}
+              >
+                {Devanagari[component]?.eka || '???'} {/* Get the title from Devanagari object */}
+              </Button>
+            ))}
+          </Stack>
+          <Button className={nanumMyeongjo.className} variant="outlined" color="primary" fullWidth onClick={this.handleGoBack} style={{ marginTop: '1rem', color: 'white', borderColor: 'white' }}>  
             Go Back  
           </Button>  
         </Paper>  
