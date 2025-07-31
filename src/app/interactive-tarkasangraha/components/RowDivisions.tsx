@@ -3,7 +3,7 @@ import { RowDivisionProps } from './interfaces';
 import { Eczar } from 'next/font/google';
 
 const eczarLight = Eczar({
-    weight: ['500'],
+    weight: ['400'],
     subsets: ['latin'],
 });
 

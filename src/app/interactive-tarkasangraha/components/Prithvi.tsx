@@ -37,7 +37,7 @@ export default function Prithvi({ onShapeClick }: GenericComponentProps) {
       },
       {
         title: 'Three types of Prithvi',
-        icons: <Sort color="primary"/>,
+        icon: <Sort color="primary"/>,
         content: <RowDivisions
           sections={[
             {

@@ -4,7 +4,7 @@ import { Eczar, Nanum_Myeongjo } from "next/font/google";
 import { Box, Typography, Divider, Chip } from "@mui/material";
 
 const eczarLight = Eczar({ weight: "400", subsets: ["devanagari"] });
-const nanumMyeongjo = Nanum_Myeongjo({ weight: "400", subsets: ["devanagari"] });
+const nanumMyeongjo = Nanum_Myeongjo({ weight: "400", subsets: ["latin"] });
 
 export default function IntroductionToTarkaShastra() {
   const divider = <Divider style={{ borderColor: 'white', width: '90%', margin: '32px 0' }} />;

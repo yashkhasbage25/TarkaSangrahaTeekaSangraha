@@ -16,7 +16,7 @@ import { Devanagari } from './components/Devanagari';
 import { Eczar, Martel, Nanum_Myeongjo } from "next/font/google";
 const eczarLight = Eczar({ weight: "400", subsets: ["devanagari"] });
 const martel = Martel({ weight: "400", subsets: ["devanagari"] });
-const nanumMyeongjo = Nanum_Myeongjo({ weight: "400", subsets: ["devanagari"] });
+const nanumMyeongjo = Nanum_Myeongjo({ weight: "400", subsets: ["latin"] });
 
 const componentMap = {  
   Padartha: Padartha,  
