@@ -3,7 +3,7 @@ import React from "react";
 import { Box, Typography, Divider, Chip } from "@mui/material";
 
 export default function AboutUs() {
-  return (<React.Fragment>
+  return (<div className="text-white">
     <Box className="mt-4 mb-6">
       <Typography variant="h4" className="font-bold">
         About Us
@@ -52,5 +52,5 @@ export default function AboutUs() {
       <Chip label="#Tarkasaṅgraha" color="info" />  
       <Chip label="#OpenForCollaboration" color="success" />  
     </Box>  
-  </React.Fragment>  )
+  </div>  )
 };

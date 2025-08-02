@@ -112,7 +112,7 @@ class GranthaPage extends Component<GranthaPageProps, GranthaPageState> {
     if (!this.state.pageInit) return null;  
   
     return (  
-      <Box className="w-full bg-transparent">  
+      <Box className="w-full text-white bg-transparent">  
         {this.checkShowBookSelection() && (  
           <BookSelection setSelectedBooks={this.setSelectedBooks} />  
         )}  

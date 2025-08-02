@@ -27,7 +27,7 @@ const nanumMyeongjo = Nanum_Myeongjo({
   
 export default function Home() {  
   return (  
-    <div className="flex flex-col grow items-center justify-center w-full">  
+    <div className="flex flex-col grow items-center justify-center w-full text-white">  
       <Stack spacing={8} className="flex flex-col items-center justify-center py-16 px-4 w-full sm:w-4/5 md:w-4/5 max-w-screen-lg">  
         <Box className={`text-4xl text-center ${eczar.className} break-all hyphens-auto`}>  
           ॥ नमः कणादगौतमवात्स्यायनादिभ्यो न्यायशास्त्रसम्प्रदायकर्तृभ्यो <br />  
