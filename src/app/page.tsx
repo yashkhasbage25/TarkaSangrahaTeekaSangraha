@@ -34,9 +34,9 @@ export default function Home() {
           वंशर्षिभ्यः परमऋषिभ्यो महद्भ्यो मुनिभ्यो गुरुभ्यः॥  
         </Box>  
 
-        <Box className={`text-2xl w-full text-center ${nanumMyeongjo.className}`}>  
-          TarkaSangraha.com - A single stop solution to entire TarkaSangraha.
-          Read teekas of Deepika, Nyayabodhini, and many more on a single website. 
+        <Box className={`text-xl w-full text-center`}>  
+          TarkaSangraha.com - A single stop solution to entire Tarkasaṇgrahaḥ.
+          Read ṭīkā-s of dīpikā, nyāyabodhinī, and many more on a single website. 
         </Box>  
 
 
@@ -53,12 +53,12 @@ export default function Home() {
         </Box>  
 
         {/* Create a box with transparent background saying 'Recent updates' */}
-        <div className={`text-xl text-left ${nanumMyeongjo.className} w-full bg-gray-900 p-8 space-y-2 text-gray-300`}> 
+        <div className={`text-lg text-left w-full bg-gray-900 p-8 space-y-2 text-gray-300`}> 
           Recent Updates: 
 
           <ul className="list-disc list-inside space-y-4">
             <li>The entire text of TarkaSangraha has been uploaded. To view this go, ग्रन्थाः -- Select Books to Read -- Select तर्कसङ्ग्रहः -- Click Read.</li>
-            <li>Similarly, Teekas of Nyayabodhini, TarkaSangrahaDeepika, TarkaSangrahaSarvasvam, and Aaloka have been uploaded</li>
+            <li>Similarly, Teekas of nyāyabodhinī, tarkasaṇgrahadīpikā, tarkasaṇgrahasarvasvam, and ālokaḥ have been uploaded</li>
             <li>Search capability in TarkaSangraha text. To try this go, अन्वेषणम् -- enter keyword -- select book as Tarkasangraha -- Click Search. You can also &quot;Open the section in new tab&quot;!</li>
             <li>Interactive TarkaSangraha is still work in progress. But would encourage to check the intermediate development.</li>
           </ul>
