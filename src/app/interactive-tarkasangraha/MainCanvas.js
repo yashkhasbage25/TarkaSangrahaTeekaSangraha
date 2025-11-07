@@ -10,6 +10,47 @@ import Vishesha from './components/Vishesha';
 import Samavaya from './components/Samavaya';  
 import Abhava from './components/Abhava';  
 import Prithvi from './components/Prithvi';
+import Apah from './components/Apah';
+import Tejas from './components/Tejas';
+import Vayu from './components/Vayu';
+import Akasha from './components/Akasha';
+import Kala from './components/Kala';
+import Dik from './components/Dik';
+import Atma from './components/Atma';
+import Manas from './components/Manas';
+import Roopa from './components/Roopa';
+import Rasa from './components/Rasa';
+import Gandha from './components/Gandha';
+import Sparsha from './components/Sparsha';
+import Sankhya from './components/Sankhya';
+import Parimaana from './components/Parimaana';
+import Prithaktva from './components/Prithaktva';
+import Sanyoga from './components/Sanyoga';
+import Vibhaga from './components/Vibhaga';
+import Paratva from './components/Paratva';
+import Aparatva from './components/Aparatva';
+import Gurutva from './components/Gurutva';
+import Dravatva from './components/Dravatva';
+import Sneha from './components/Sneha';
+import Shabda from './components/Shabda';
+import Buddhi from './components/Buddhi';
+import Sukha from './components/Sukha';
+import Dukha from './components/Dukha';
+import Iccha from './components/Iccha';
+import Dvesha from './components/Dvesha';
+import Prayatna from './components/Prayatna';
+import Dharma from './components/Dharma';
+import Adharma from './components/Adharma';
+import Samskara from './components/Samskara';
+import Utkshepana from './components/Utkshepana';
+import Apakshepana from './components/Apakshepana';
+import Akunchana from './components/Akunchana';
+import Prasarana from './components/Prasarana';
+import Gamana from './components/Gamana';
+import Pragabhava from './components/Pragabhava';
+import Pradhvamsabhava from './components/Pradhvamsabhava';
+import Atyantabhava from './components/Atyantabhava';
+import Anyonyabhava from './components/Anyonyabhava';
 import Unknown from './components/Unknown';
 import { NavigationPaths } from './components/Navigations';  
 import { Devanagari } from './components/Devanagari';
@@ -28,6 +69,47 @@ const componentMap = {
   Samavaya: Samavaya,  
   Abhava: Abhava,  
   Prithvi: Prithvi,
+  Aap: Apah,
+  Tejah: Tejas,
+  Vayu: Vayu,
+  Akasha: Akasha,
+  Kaala: Kala,
+  Dik: Dik,
+  Aatma: Atma,
+  Manah: Manas,
+  Roopa: Roopa,
+  Rasa: Rasa,
+  Gandha: Gandha,
+  Sparsha: Sparsha,
+  Sankhya: Sankhya,
+  Parimaana: Parimaana,
+  Prithaktva: Prithaktva,
+  Sanyoga: Sanyoga,
+  Vibhaga: Vibhaga,
+  Paratva: Paratva,
+  Aparatva: Aparatva,
+  Gurutva: Gurutva,
+  Dravatva: Dravatva,
+  Sneha: Sneha,
+  Shabda: Shabda,
+  Buddhi: Buddhi,
+  Sukha: Sukha,
+  Dukha: Dukha,
+  Iccha: Iccha,
+  Dvesha: Dvesha,
+  Prayatna: Prayatna,
+  Dharma: Dharma,
+  Adharma: Adharma,
+  Samskara: Samskara,
+  Utkshepana: Utkshepana,
+  Apakshepana: Apakshepana,
+  Akunchana: Akunchana,
+  Prasarana: Prasarana,
+  Gamana: Gamana,
+  Pragabhava: Pragabhava,
+  Pradhvamsabhava: Pradhvamsabhava,
+  Atyantabhava: Atyantabhava,
+  Anyonyabhava: Anyonyabhava,
 };  
   
 class MainCanvas extends Component {  

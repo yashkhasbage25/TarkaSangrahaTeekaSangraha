@@ -85,7 +85,8 @@ export default class Padartha extends React.Component<GenericComponentProps> {
           { name: Devanagari[NavigationPaths.PRADHVAMSABHAVA].eka },
           { name: Devanagari[NavigationPaths.ATYANTABHAVA].eka },
           { name: Devanagari[NavigationPaths.ANYONYABHAVA].eka },
-        ]
+        ],
+        navigateTo: NavigationPaths.ABHAVA
       }
     ]
   }

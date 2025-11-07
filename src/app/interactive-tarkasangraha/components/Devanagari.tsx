@@ -35,8 +35,8 @@ export const Devanagari: DevanagariInterface = {
     bahu: 'विशेषाः',  
   },  
   [NavigationPaths.SAMAVAYA]: {  
-    eka: 'सामवायः',  
-    bahu: 'सामवायाः',  
+    eka: 'समवायः',  
+    bahu: 'समवायाः',  
   },  
   [NavigationPaths.ABHAVA]: {  
     eka: 'अभावः',  
@@ -183,8 +183,8 @@ export const Devanagari: DevanagariInterface = {
     bahu: 'अपक्षेपणानि',
   },
   [NavigationPaths.AKUNCHANA]: {
-    eka: 'अकुंचनम्',
-    bahu: 'अकुंचनानि',
+    eka: 'आकुञ्चनम्',
+    bahu: 'आकुञ्चनानि',
   },
   [NavigationPaths.PRASARANA]: {
     eka: 'प्रसारणम्',
@@ -204,20 +204,20 @@ export const Devanagari: DevanagariInterface = {
     bahu: 'अपराणि',
   },
   [NavigationPaths.PRAGABHAVA]: {
-    eka: 'प्रगभवः',
-    bahu: 'प्रगभवाः',
+    eka: 'प्रागभावः',
+    bahu: 'प्रागभावाः',
   },
   [NavigationPaths.PRADHVAMSABHAVA]: {
-    eka: 'प्रध्वंसभवः',
-    bahu: 'प्रध्वंसभवाः',
+    eka: 'प्रध्वंसाभावः',
+    bahu: 'प्रध्वंसाभावाः',
   },
   [NavigationPaths.ATYANTABHAVA]: {
-    eka: 'अत्यन्तभवः',
-    bahu: 'अत्यन्तभवाः',
+    eka: 'अत्यन्ताभावः',
+    bahu: 'अत्यन्ताभावाः',
   },
   [NavigationPaths.ANYONYABHAVA]: {
-    eka: 'अन्योन्यभवः',
-    bahu: 'अन्योन्यभवाः',
+    eka: 'अन्योन्याभावः',
+    bahu: 'अन्योन्याभावाः',
   },
 
 
