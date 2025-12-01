@@ -25,7 +25,7 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
     super(props);
     this.alignedSections = this.alignSections(props.books);
     this.state = {
-      isPaneOpen: false,
+      isPaneOpen: window.innerWidth > 600,
     };
   }
 
