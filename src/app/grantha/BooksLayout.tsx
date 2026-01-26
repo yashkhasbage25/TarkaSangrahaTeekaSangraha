@@ -1,15 +1,26 @@
 'use client';
 import React, { Component, createRef } from 'react';
 import { BooksLayoutProps, BookSection, Book, BooksLayoutState } from './interfaces';
-import { Box, Typography, Paper, IconButton } from '@mui/material';
+import { Box, Typography, Paper, IconButton, TextField, Button } from '@mui/material';
 import { Eczar } from 'next/font/google';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import BookIcon from '@mui/icons-material/Book';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import EditIcon from '@mui/icons-material/Edit';
+import SaveIcon from '@mui/icons-material/Save';
+import CancelIcon from '@mui/icons-material/Cancel';
+import { isLocalTesting, bookNameToUrlFileName } from '../utils/book_urls';
 
 const eczarBold = Eczar({ weight: "700", subsets: ["devanagari"] });
 const eczarLight = Eczar({ weight: "400", subsets: ["devanagari"] });
+
+interface EditingSection {
+  bookTitle: string;
+  sectionId: string | undefined;
+  title: string;
+  content: string;
+}
 
 // Make Box keys more reliable by encoding  
 function makeSectionKey(bookTitle: string, title: string, sectionId: string | undefined) {
@@ -26,6 +37,10 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
     this.alignedSections = this.alignSections(props.books);
     this.state = {
       isPaneOpen: window.innerWidth > 600,
+      editingSection: null,
+      editedTitle: '',
+      editedContent: '',
+      isSaving: false,
     };
   }
 
@@ -169,6 +184,78 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
     this.setState({ isPaneOpen: !this.state.isPaneOpen });
   };
 
+  handleEditSection = (bookTitle: string, title: string, content: string, sectionId: string | undefined) => {
+    this.setState({
+      editingSection: { bookTitle, sectionId, title, content },
+      editedTitle: title,
+      editedContent: content,
+    });
+  };
+
+  handleCancelEdit = () => {
+    this.setState({
+      editingSection: null,
+      editedTitle: '',
+      editedContent: '',
+    });
+  };
+
+  handleSaveSection = async () => {
+    const { editingSection, editedTitle, editedContent } = this.state;
+    if (!editingSection) return;
+
+    this.setState({ isSaving: true });
+
+    try {
+      const fileName = bookNameToUrlFileName(editingSection.bookTitle);
+      const response = await fetch('/api/save-section', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          bookName: fileName,
+          sectionId: editingSection.sectionId,
+          title: editedTitle,
+          content: editedContent,
+        }),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || 'Failed to save');
+      }
+
+      // Update local state
+      const updatedBooks = this.props.books.map(book => 
+        book.map(section => {
+          if (section.sectionId === editingSection.sectionId) {
+            return { ...section, title: editedTitle, content: editedContent };
+          }
+          return section;
+        })
+      );
+
+      // Realign sections with updated data
+      this.alignedSections = this.alignSections(updatedBooks);
+
+      alert('Section saved successfully!');
+      this.setState({
+        editingSection: null,
+        editedTitle: '',
+        editedContent: '',
+        isSaving: false,
+      });
+
+      // Force re-render
+      this.forceUpdate();
+    } catch (error) {
+      console.error('Error saving section:', error);
+      alert(`Failed to save: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      this.setState({ isSaving: false });
+    }
+  };
+
   render() {
     const { selectedBooks } = this.props;
     // Build section list for the TOC  
@@ -226,35 +313,159 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
               ))}
             </Box>
             <Box className="space-y-6">
-              {this.alignedSections.map((section, index) => (
-                <Paper key={index} variant="outlined" elevation={3} className="p-6 rounded max-w-[600]">
-                  <Box
-                    ref={this.sectionRefs[makeSectionKey(selectedBooks[0], section.base.title, section.base.sectionId)]}
-                    className="flex flex-col items-center justify-center"
-                  >
-                    <Box className={`${eczarBold.className} text-2xl`}>
-                      {section.base.title}
-                    </Box>
-                    <Box className={`${eczarLight.className} p-4`} style={{ wordBreak: 'break-word', hyphens: 'auto' }}>
-                      {section.base.content}
-                    </Box>
-                  </Box>
-                  {section.commentaries.map(({ commentary, bookTitle }, comIndex) => (
+              {this.alignedSections.map((section, index) => {
+                const isEditingBase = this.state.editingSection?.bookTitle === selectedBooks[0] && 
+                                      this.state.editingSection?.sectionId === section.base.sectionId;
+                
+                return (
+                  <Paper key={index} variant="outlined" elevation={3} className="p-6 rounded max-w-[600]">
                     <Box
-                      key={comIndex}
-                      ref={this.sectionRefs[makeSectionKey(bookTitle, commentary.title, commentary.sectionId)]}
-                      className="mb-4 p-4 border-l-2 border-gray-300"
+                      ref={this.sectionRefs[makeSectionKey(selectedBooks[0], section.base.title, section.base.sectionId)]}
+                      className="flex flex-col items-center justify-center"
                     >
-                      <Box className={`${eczarBold.className} mb-2`}>
-                        {bookTitle} - {commentary.title}
-                      </Box>
-                      <Box className={`${eczarLight.className}`} style={{ wordBreak: 'break-word', hyphens: 'auto' }}>
-                        {commentary.content}
-                      </Box>
+                      {isEditingBase ? (
+                        <Box className="w-full space-y-4">
+                          <TextField
+                            fullWidth
+                            label="Title"
+                            value={this.state.editedTitle}
+                            onChange={(e) => this.setState({ editedTitle: e.target.value })}
+                            className={eczarBold.className}
+                          />
+                          <TextField
+                            fullWidth
+                            multiline
+                            rows={6}
+                            label="Content"
+                            value={this.state.editedContent}
+                            onChange={(e) => this.setState({ editedContent: e.target.value })}
+                            className={eczarLight.className}
+                          />
+                          <Box className="flex gap-2 justify-center">
+                            <Button
+                              variant="contained"
+                              color="primary"
+                              startIcon={<SaveIcon />}
+                              onClick={this.handleSaveSection}
+                              disabled={this.state.isSaving}
+                            >
+                              {this.state.isSaving ? 'Saving...' : 'Save'}
+                            </Button>
+                            <Button
+                              variant="outlined"
+                              startIcon={<CancelIcon />}
+                              onClick={this.handleCancelEdit}
+                              disabled={this.state.isSaving}
+                            >
+                              Cancel
+                            </Button>
+                          </Box>
+                        </Box>
+                      ) : (
+                        <>
+                          <Box className="flex items-center gap-2">
+                            <Box className={`${eczarBold.className} text-2xl`}>
+                              {section.base.title}
+                            </Box>
+                            {isLocalTesting() && (
+                              <IconButton
+                                size="small"
+                                onClick={() => this.handleEditSection(
+                                  selectedBooks[0],
+                                  section.base.title,
+                                  section.base.content,
+                                  section.base.sectionId
+                                )}
+                              >
+                                <EditIcon fontSize="small" />
+                              </IconButton>
+                            )}
+                          </Box>
+                          <Box className={`${eczarLight.className} p-4`} style={{ wordBreak: 'break-word', hyphens: 'auto' }}>
+                            {section.base.content}
+                          </Box>
+                        </>
+                      )}
                     </Box>
-                  ))}
-                </Paper>
-              ))}
+                    {section.commentaries.map(({ commentary, bookTitle }, comIndex) => {
+                      const isEditingCommentary = this.state.editingSection?.bookTitle === bookTitle && 
+                                                  this.state.editingSection?.sectionId === commentary.sectionId;
+                      
+                      return (
+                        <Box
+                          key={comIndex}
+                          ref={this.sectionRefs[makeSectionKey(bookTitle, commentary.title, commentary.sectionId)]}
+                          className="mb-4 p-4 border-l-2 border-gray-300"
+                        >
+                          {isEditingCommentary ? (
+                            <Box className="w-full space-y-4">
+                              <TextField
+                                fullWidth
+                                label="Title"
+                                value={this.state.editedTitle}
+                                onChange={(e) => this.setState({ editedTitle: e.target.value })}
+                                className={eczarBold.className}
+                              />
+                              <TextField
+                                fullWidth
+                                multiline
+                                rows={6}
+                                label="Content"
+                                value={this.state.editedContent}
+                                onChange={(e) => this.setState({ editedContent: e.target.value })}
+                                className={eczarLight.className}
+                              />
+                              <Box className="flex gap-2">
+                                <Button
+                                  variant="contained"
+                                  color="primary"
+                                  startIcon={<SaveIcon />}
+                                  onClick={this.handleSaveSection}
+                                  disabled={this.state.isSaving}
+                                >
+                                  {this.state.isSaving ? 'Saving...' : 'Save'}
+                                </Button>
+                                <Button
+                                  variant="outlined"
+                                  startIcon={<CancelIcon />}
+                                  onClick={this.handleCancelEdit}
+                                  disabled={this.state.isSaving}
+                                >
+                                  Cancel
+                                </Button>
+                              </Box>
+                            </Box>
+                          ) : (
+                            <>
+                              <Box className="flex items-center gap-2">
+                                <Box className={`${eczarBold.className} mb-2`}>
+                                  {bookTitle} - {commentary.title}
+                                </Box>
+                                {isLocalTesting() && (
+                                  <IconButton
+                                    size="small"
+                                    onClick={() => this.handleEditSection(
+                                      bookTitle,
+                                      commentary.title,
+                                      commentary.content,
+                                      commentary.sectionId
+                                    )}
+                                  >
+                                    <EditIcon fontSize="small" />
+                                  </IconButton>
+                                )}
+                              </Box>
+                              <Box className={`${eczarLight.className}`} style={{ wordBreak: 'break-word', hyphens: 'auto' }}>
+                                {commentary.content}
+                              </Box>
+                            </>
+                          )}
+                        </Box>
+                      );
+                    })}
+                  </Paper>
+                );
+              })}
             </Box>
           </Box>
           {/* Sidebar */}

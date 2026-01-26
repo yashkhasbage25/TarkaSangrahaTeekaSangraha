@@ -33,7 +33,16 @@ export interface BooksLayoutProps {
     deeplink?: DeeplinkParams;  
 }  
 export interface BooksLayoutState {  
-    isPaneOpen: boolean;  
+    isPaneOpen: boolean;
+    editingSection: {
+        bookTitle: string;
+        sectionId: string | undefined;
+        title: string;
+        content: string;
+    } | null;
+    editedTitle: string;
+    editedContent: string;
+    isSaving: boolean;
 }  
   
 // New for query/deeplink parameters  

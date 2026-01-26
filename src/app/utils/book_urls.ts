@@ -20,14 +20,17 @@ function bookNameToUrlFileName(bookName: string): string {
             return 'tarkasangrahasarvasvam_with_section_mappings';
         case 'aalok':
             return 'aalok_with_section_mappings';
+        case 'English Translation of TarkaSangraha':
+            return 'englishts_mappings';
         default:
             throw new Error('Book title not recognized');
     }
 }
 
+const localTesting = true;
+
 function bookNameToUrl(bookName: string): string {
     const fileName = bookNameToUrlFileName(bookName);
-    const localTesting = false;
     if (localTesting) {
         const baseUrl = 'http://localhost:8000';
         return `${baseUrl}/${fileName}.json`;
@@ -37,6 +40,12 @@ function bookNameToUrl(bookName: string): string {
     }
 }
 
+function isLocalTesting(): boolean {
+    return localTesting;
+}
+
 export {
     bookNameToUrl,
+    bookNameToUrlFileName,
+    isLocalTesting,
 }
