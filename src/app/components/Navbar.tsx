@@ -55,6 +55,9 @@ const Navbar = () => {
         <Link href="/grantha" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0" onClick={handleLinkClick}>  
           ग्रन्थाः  
         </Link>  
+        <Link href="/lekhah" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0" onClick={handleLinkClick}>  
+          लेखाः  
+        </Link>  
         <Link href="/anveshanam" className="text-xl text-white hover:text-gray-600 ml-6 ease-in-out duration-500 mt-2 sm:mt-0" onClick={handleLinkClick}>  
           अन्वेषणम्  
         </Link>  
