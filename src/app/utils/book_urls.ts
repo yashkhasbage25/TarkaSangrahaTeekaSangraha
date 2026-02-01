@@ -27,7 +27,7 @@ function bookNameToUrlFileName(bookName: string): string {
     }
 }
 
-const localTesting = true;
+const localTesting = false;
 
 function bookNameToUrl(bookName: string): string {
     const fileName = bookNameToUrlFileName(bookName);
