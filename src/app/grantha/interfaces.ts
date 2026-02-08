@@ -43,6 +43,11 @@ export interface BooksLayoutState {
     editedTitle: string;
     editedContent: string;
     isSaving: boolean;
+    toast: {
+        open: boolean;
+        message: string;
+        severity: 'success' | 'error';
+    };
 }  
   
 // New for query/deeplink parameters  

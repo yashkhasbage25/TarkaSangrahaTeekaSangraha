@@ -22,8 +22,10 @@ function bookNameToUrlFileName(bookName: string): string {
             return 'aalok_with_section_mappings';
         case 'English Translation of TarkaSangraha':
             return 'englishts_mappings';
+        case 'TarkaSangraha - English Translation':
+            return 'englishts_mappings';
         default:
-            throw new Error('Book title not recognized');
+            throw new Error(`Book title not recognized: ${bookName}`);
     }
 }
 

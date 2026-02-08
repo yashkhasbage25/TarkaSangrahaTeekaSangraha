@@ -1,7 +1,7 @@
 'use client';
 import React, { Component, createRef } from 'react';
 import { BooksLayoutProps, BookSection, Book, BooksLayoutState } from './interfaces';
-import { Box, Typography, Paper, IconButton, TextField, Button } from '@mui/material';
+import { Box, Typography, Paper, IconButton, TextField, Button, Snackbar, Alert } from '@mui/material';
 import { Eczar } from 'next/font/google';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -41,6 +41,11 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
       editedTitle: '',
       editedContent: '',
       isSaving: false,
+      toast: {
+        open: false,
+        message: '',
+        severity: 'success',
+      },
     };
   }
 
@@ -184,6 +189,10 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
     this.setState({ isPaneOpen: !this.state.isPaneOpen });
   };
 
+  handleCloseToast = () => {
+    this.setState({ toast: { ...this.state.toast, open: false } });
+  };
+
   handleEditSection = (bookTitle: string, title: string, content: string, sectionId: string | undefined) => {
     this.setState({
       editingSection: { bookTitle, sectionId, title, content },
@@ -239,20 +248,30 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
       // Realign sections with updated data
       this.alignedSections = this.alignSections(updatedBooks);
 
-      alert('Section saved successfully!');
       this.setState({
         editingSection: null,
         editedTitle: '',
         editedContent: '',
         isSaving: false,
+        toast: {
+          open: true,
+          message: 'Section saved successfully!',
+          severity: 'success',
+        },
       });
 
       // Force re-render
       this.forceUpdate();
     } catch (error) {
       console.error('Error saving section:', error);
-      alert(`Failed to save: ${error instanceof Error ? error.message : 'Unknown error'}`);
-      this.setState({ isSaving: false });
+      this.setState({ 
+        isSaving: false,
+        toast: {
+          open: true,
+          message: `Failed to save: ${error instanceof Error ? error.message : 'Unknown error'}`,
+          severity: 'error',
+        },
+      });
     }
   };
 
@@ -535,6 +554,21 @@ export class BooksLayout extends Component<BooksLayoutProps, BooksLayoutState> {
               aria-hidden="true"
             />
           )}
+        <Snackbar
+          open={this.state.toast.open}
+          autoHideDuration={4000}
+          onClose={this.handleCloseToast}
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        >
+          <Alert 
+            onClose={this.handleCloseToast} 
+            severity={this.state.toast.severity}
+            variant="filled"
+            sx={{ width: '100%' }}
+          >
+            {this.state.toast.message}
+          </Alert>
+        </Snackbar>
       </React.Fragment>
     );
   }
