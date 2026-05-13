@@ -6,6 +6,7 @@ author: "तर्कसङ्ग्रहः Team"
 excerpt: "द्रव्यगुणकर्मसामान्यविशेषसमवायाभावाः सप्त पदार्थाः। An introduction to the seven categories accepted in Nyāya-Vaiśeṣika."
 tags: ["पदार्थाः", "वैशेषिकम्", "न्यायः"]
 image: "/smoky_mountain_2.png"
+hidden: true
 ---
 
 # सप्तपदार्थाः

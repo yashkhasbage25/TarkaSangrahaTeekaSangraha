@@ -29,7 +29,7 @@ function bookNameToUrlFileName(bookName: string): string {
     }
 }
 
-const localTesting = false;
+const localTesting = process.env.NODE_ENV !== 'production';
 
 function bookNameToUrl(bookName: string): string {
     const fileName = bookNameToUrlFileName(bookName);

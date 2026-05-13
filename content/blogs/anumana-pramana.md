@@ -6,6 +6,7 @@ author: "तर्कसङ्ग्रहः Team"
 excerpt: "अनुमानं नाम व्याप्तिविशिष्टपक्षधर्मताज्ञानम्। Understanding the nature of inferential knowledge in Nyāya philosophy."
 tags: ["अनुमानम्", "प्रमाणम्", "न्यायः"]
 image: "/smoky_mountain.png"
+hidden:  true
 ---
 
 # अनुमानप्रमाणम्
